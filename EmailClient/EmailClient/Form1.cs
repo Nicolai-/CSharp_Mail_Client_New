@@ -70,7 +70,11 @@ namespace EmailClient
                 dbh.InsertMail(mail);
             }
             StripProgressBar.Value = 0;
-
+            if (ActiveWindow == "inbox")
+            {
+                dbHandler = new DBHandler();
+                inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
+            }
         }
 
         private void WorkerProgressChanged(object sender, ProgressChangedEventArgs e)

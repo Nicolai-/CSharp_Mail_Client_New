@@ -65,6 +65,7 @@ namespace EmailClient
                 OpenPop.Mime.MessagePart plainText = mail.FindFirstPlainTextVersion();
                 message = plainText.GetBodyAsText();
             }
+            message = Crypto.DecryptStringAES(message, "SUPERMAIL");
 
             /* Debug output */
             //Debug.WriteLine("Sender: " + sender);

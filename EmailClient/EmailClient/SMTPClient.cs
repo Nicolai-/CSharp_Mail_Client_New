@@ -21,7 +21,7 @@ namespace EmailClient
             msg.From = new MailAddress(Setting.Default.username, "C#EmailClient");
             msg.To.Add(new MailAddress(to));
             msg.Subject = subject;
-            msg.Body = message;
+            msg.Body = Crypto.EncryptStringAES(message, "SUPERMAIL");
             Client.EnableSsl = true;
             try
             {
