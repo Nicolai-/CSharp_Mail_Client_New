@@ -20,7 +20,7 @@ namespace EmailClient
             FromLblText.Text = from;
             SubjectLblText.Text = subject;
             ShowMailTextBox.BackColor = Color.White;
-            ShowMailTextBox.Text = "To: " + to + "\r\n\r\n" + "From. " + from + "\r\n\r\n" + "Subject: " + subject + "\r\n\r\n\r\n\r\n" + message;
+            ShowMailTextBox.Text = message;
             /* Set title of window */
             this.Text = subject;
         }
@@ -32,7 +32,8 @@ namespace EmailClient
 
         private void PrintDocumentOnPrintPage(object sender, PrintPageEventArgs e)
         {
-            e.Graphics.DrawString(this.ShowMailTextBox.Text, this.ShowMailTextBox.Font, Brushes.Black, 10, 25);
+            string FullMessage = "To: " + this.ToLblText.Text + "\r\n\r\n" + "From. " + this.FromLblText.Text + "\r\n\r\n" + "Subject: " + this.SubjectLblText.Text + "\r\n\r\n\r\n\r\n" + this.ShowMailTextBox.Text;
+            e.Graphics.DrawString(FullMessage, this.ShowMailTextBox.Font, Brushes.Black, 10, 25);
         }
 
 
