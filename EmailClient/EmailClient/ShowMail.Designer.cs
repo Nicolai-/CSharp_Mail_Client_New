@@ -35,6 +35,7 @@
             this.FromLblText = new System.Windows.Forms.Label();
             this.SubjectLblText = new System.Windows.Forms.Label();
             this.ShowMailTextBox = new System.Windows.Forms.RichTextBox();
+            this.Print_button = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ToLbl
@@ -98,11 +99,22 @@
             this.ShowMailTextBox.TabIndex = 8;
             this.ShowMailTextBox.Text = "";
             // 
+            // Print_button
+            // 
+            this.Print_button.Location = new System.Drawing.Point(526, 19);
+            this.Print_button.Name = "Print_button";
+            this.Print_button.Size = new System.Drawing.Size(75, 23);
+            this.Print_button.TabIndex = 9;
+            this.Print_button.Text = "Print";
+            this.Print_button.UseVisualStyleBackColor = true;
+            this.Print_button.Click += new System.EventHandler(this.Print_button_Click);
+            // 
             // ShowMail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 614);
+            this.Controls.Add(this.Print_button);
             this.Controls.Add(this.ShowMailTextBox);
             this.Controls.Add(this.SubjectLblText);
             this.Controls.Add(this.FromLblText);
@@ -112,6 +124,7 @@
             this.Controls.Add(this.ToLbl);
             this.Name = "ShowMail";
             this.Text = "ShowMail";
+            this.Load += new System.EventHandler(this.ShowMail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +139,6 @@
         private System.Windows.Forms.Label FromLblText;
         private System.Windows.Forms.Label SubjectLblText;
         private System.Windows.Forms.RichTextBox ShowMailTextBox;
+        private System.Windows.Forms.Button Print_button;
     }
 }
