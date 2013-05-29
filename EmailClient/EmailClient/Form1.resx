@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;newMail_btn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="inbox_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -169,40 +169,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;inbox_btn.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="outbot_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="outbot_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>305, 23</value>
-  </data>
-  <data name="outbot_btn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>132, 58</value>
-  </data>
-  <data name="outbot_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="outbot_btn.Text" xml:space="preserve">
-    <value>Outbox</value>
-  </data>
-  <data name="&gt;&gt;outbot_btn.Name" xml:space="preserve">
-    <value>outbot_btn</value>
-  </data>
-  <data name="&gt;&gt;outbot_btn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;outbot_btn.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;outbot_btn.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="sendReceive_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="sendReceive_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>443, 23</value>
+    <value>305, 23</value>
   </data>
   <data name="sendReceive_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 58</value>
@@ -465,6 +438,15 @@
   <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="StripProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="StripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
   <data name="StatusStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 599</value>
   </data>
@@ -488,15 +470,6 @@
   </data>
   <data name="&gt;&gt;StatusStrip.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
-  </data>
-  <data name="StripProgressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
-  <data name="StripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
