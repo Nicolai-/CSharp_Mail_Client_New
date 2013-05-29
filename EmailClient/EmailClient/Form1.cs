@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Message = OpenPop.Mime.Message;
 using OpenPop;
 using System.Diagnostics;
-using Setting = EmailClient.Properties.Settings;
+
 
 namespace EmailClient
 {
@@ -21,12 +21,17 @@ namespace EmailClient
         DBHandler dbHandler;
         ShowMail ShowMailWindow;
         Dictionary<string, string> MailContent;
+        private BackgroundWorker worker;
 
         public Form1()
         {
             this.Load += Form1_Load;
             InitializeComponent();
-
+            worker = new BackgroundWorker();
+            worker.WorkerReportsProgress = true;
+            worker.DoWork += new DoWorkEventHandler(POPClient.GetAllMails);
+            //worker.ProgressChanged += new ProgressChangedEventHandler(WorkerProgressChanged);
+            worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(WorkerRunCompleted);
         }
         void Form1_Load(object sender, EventArgs e)
         {
@@ -55,17 +60,25 @@ namespace EmailClient
             inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
         }
 
-        private void sendReceive_btn_Click(object sender, EventArgs e)
+        private void WorkerRunCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            dbHandler = new DBHandler();
-
             List<Message> mails = new List<Message>();
-            mails = POPClient.GetAllMails(Setting.Default.pop3_server, Setting.Default.pop3_port, Setting.Default.ssl, Setting.Default.username, Setting.Default.password);
+            mails = (List<Message>)e.Result;
+            DBHandler dbh = new DBHandler();
             foreach (Message mail in mails)
             {
-                dbHandler.InsertMail(mail);
+                dbh.InsertMail(mail);
             }
 
+        }
+
+        private void sendReceive_btn_Click(object sender, EventArgs e)
+        {
+
+            if (!worker.IsBusy)
+            {
+                worker.RunWorkerAsync();
+            }
         }
 
         private void inboxDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
