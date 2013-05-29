@@ -16,6 +16,8 @@ namespace EmailClient
 
         public static void GetAllMails(object sender, DoWorkEventArgs e)
         {
+            int percentComplete;
+
             using(Pop3Client client = new Pop3Client())
             {
                 client.Connect(Setting.Default.pop3_server, Setting.Default.pop3_port, Setting.Default.ssl);
@@ -31,7 +33,8 @@ namespace EmailClient
                 for (int i = messageCount; i > 0; i--)
                 {
                     allMessages.Add(client.GetMessage(i));
-                    Debug.WriteLine(client.GetMessage(i).MessagePart);
+                    percentComplete = Convert.ToInt16((Convert.ToDouble(allMessages.Count) / Convert.ToDouble(messageCount)) * 100);
+                    (sender as BackgroundWorker).ReportProgress(percentComplete);
                 }
                 e.Result =  allMessages;
             }            

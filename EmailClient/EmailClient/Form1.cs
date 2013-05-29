@@ -30,7 +30,7 @@ namespace EmailClient
             worker = new BackgroundWorker();
             worker.WorkerReportsProgress = true;
             worker.DoWork += new DoWorkEventHandler(POPClient.GetAllMails);
-            //worker.ProgressChanged += new ProgressChangedEventHandler(WorkerProgressChanged);
+            worker.ProgressChanged += new ProgressChangedEventHandler(WorkerProgressChanged);
             worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(WorkerRunCompleted);
         }
         void Form1_Load(object sender, EventArgs e)
@@ -69,10 +69,16 @@ namespace EmailClient
             {
                 dbh.InsertMail(mail);
             }
+            StripProgressBar.Value = 0;
 
         }
 
-        private void sendReceive_btn_Click(object sender, EventArgs e)
+        private void WorkerProgressChanged(object sender, ProgressChangedEventArgs e)
+        {
+            StripProgressBar.Value = e.ProgressPercentage;
+        }
+
+        private void Retrieve_btn_Click(object sender, EventArgs e)
         {
 
             if (!worker.IsBusy)
@@ -107,9 +113,9 @@ namespace EmailClient
             inboxDataGridView.Visible = false;
         }
      
-        private void Textbox_MouseClick(object sender, MouseEventArgs e)
+        private void ClearStatus(object sender, MouseEventArgs e)
         {
-            Status_textbox.Text = string.Empty;
+            StripStatusLabel.Text = string.Empty;
         }
 
         private void Send_Button_Click(object sender, EventArgs e)
@@ -117,17 +123,17 @@ namespace EmailClient
             bool flag = SMTPClient.Send(To_textbox.Text, Subject_textbox.Text, Message_textbox.Text);
             if (flag == true)
             {
-                Status_textbox.Text = "Sucess ! 1 Email send from the nr 1 email client";
+                StripStatusLabel.Text = "Sucess ! 1 Email send from the nr 1 email client"; 
                 To_textbox.Text = string.Empty;
                 Subject_textbox.Text = string.Empty;
                 Message_textbox.Text = string.Empty;
             }
             else
             {
-                Status_textbox.Text = "Error ! you fucked up.. sorry...";
+                StripStatusLabel.Text = "Error ! you fucked up.. sorry...";
             }
         }
-   
+ 
 
     }
 }

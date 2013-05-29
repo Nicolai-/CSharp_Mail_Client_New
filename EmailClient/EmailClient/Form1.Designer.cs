@@ -39,12 +39,16 @@
             this.Message_Label = new System.Windows.Forms.Label();
             this.Subject_Label = new System.Windows.Forms.Label();
             this.To_Label = new System.Windows.Forms.Label();
-            this.Status_textbox = new System.Windows.Forms.TextBox();
             this.Subject_textbox = new System.Windows.Forms.TextBox();
             this.Message_textbox = new System.Windows.Forms.TextBox();
             this.To_textbox = new System.Windows.Forms.TextBox();
+            this.StatusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
+            this.StripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).BeginInit();
             this.Mail_Groupbox.SuspendLayout();
+            this.StatusStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // newMail_btn
@@ -72,7 +76,7 @@
             resources.ApplyResources(this.sendReceive_btn, "sendReceive_btn");
             this.sendReceive_btn.Name = "sendReceive_btn";
             this.sendReceive_btn.UseVisualStyleBackColor = true;
-            this.sendReceive_btn.Click += new System.EventHandler(this.sendReceive_btn_Click);
+            this.sendReceive_btn.Click += new System.EventHandler(this.Retrieve_btn_Click);
             // 
             // inboxDataGridView
             // 
@@ -99,7 +103,6 @@
             this.Mail_Groupbox.Controls.Add(this.Message_Label);
             this.Mail_Groupbox.Controls.Add(this.Subject_Label);
             this.Mail_Groupbox.Controls.Add(this.To_Label);
-            this.Mail_Groupbox.Controls.Add(this.Status_textbox);
             this.Mail_Groupbox.Controls.Add(this.Subject_textbox);
             this.Mail_Groupbox.Controls.Add(this.Message_textbox);
             this.Mail_Groupbox.Controls.Add(this.To_textbox);
@@ -129,34 +132,54 @@
             resources.ApplyResources(this.To_Label, "To_Label");
             this.To_Label.Name = "To_Label";
             // 
-            // Status_textbox
-            // 
-            resources.ApplyResources(this.Status_textbox, "Status_textbox");
-            this.Status_textbox.Name = "Status_textbox";
-            this.Status_textbox.ReadOnly = true;
-            // 
             // Subject_textbox
             // 
             resources.ApplyResources(this.Subject_textbox, "Subject_textbox");
             this.Subject_textbox.Name = "Subject_textbox";
-            this.Subject_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbox_MouseClick);
+            this.Subject_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ClearStatus);
             // 
             // Message_textbox
             // 
             resources.ApplyResources(this.Message_textbox, "Message_textbox");
             this.Message_textbox.Name = "Message_textbox";
-            this.Message_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbox_MouseClick);
+            this.Message_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ClearStatus);
             // 
             // To_textbox
             // 
             resources.ApplyResources(this.To_textbox, "To_textbox");
             this.To_textbox.Name = "To_textbox";
-            this.To_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbox_MouseClick);
+            this.To_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ClearStatus);
+            // 
+            // StatusStrip
+            // 
+            this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripProgressBar1,
+            this.StripProgressBar,
+            this.StripStatusLabel});
+            resources.ApplyResources(this.StatusStrip, "StatusStrip");
+            this.StatusStrip.Name = "StatusStrip";
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            resources.ApplyResources(this.toolStripProgressBar1, "toolStripProgressBar1");
+            // 
+            // StripProgressBar
+            // 
+            this.StripProgressBar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.StripProgressBar.Name = "StripProgressBar";
+            resources.ApplyResources(this.StripProgressBar, "StripProgressBar");
+            // 
+            // StripStatusLabel
+            // 
+            this.StripStatusLabel.Name = "StripStatusLabel";
+            resources.ApplyResources(this.StripStatusLabel, "StripStatusLabel");
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.StatusStrip);
             this.Controls.Add(this.Mail_Groupbox);
             this.Controls.Add(this.inboxDataGridView);
             this.Controls.Add(this.sendReceive_btn);
@@ -167,7 +190,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).EndInit();
             this.Mail_Groupbox.ResumeLayout(false);
             this.Mail_Groupbox.PerformLayout();
+            this.StatusStrip.ResumeLayout(false);
+            this.StatusStrip.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -183,10 +209,13 @@
         private System.Windows.Forms.Label Message_Label;
         private System.Windows.Forms.Label Subject_Label;
         private System.Windows.Forms.Label To_Label;
-        private System.Windows.Forms.TextBox Status_textbox;
         private System.Windows.Forms.TextBox Subject_textbox;
         private System.Windows.Forms.TextBox Message_textbox;
         private System.Windows.Forms.TextBox To_textbox;
+        private System.Windows.Forms.StatusStrip StatusStrip;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripProgressBar1;
+        private System.Windows.Forms.ToolStripProgressBar StripProgressBar;
+        private System.Windows.Forms.ToolStripStatusLabel StripStatusLabel;
     }
 }
 

@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;newMail_btn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="inbox_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -169,7 +169,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;inbox_btn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="outbot_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -196,7 +196,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;outbot_btn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="sendReceive_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -211,7 +211,7 @@
     <value>3</value>
   </data>
   <data name="sendReceive_btn.Text" xml:space="preserve">
-    <value>Send / Receive</value>
+    <value>Retrieve Mail</value>
   </data>
   <data name="&gt;&gt;sendReceive_btn.Name" xml:space="preserve">
     <value>sendReceive_btn</value>
@@ -223,7 +223,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;sendReceive_btn.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="inboxDataGridView.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 107</value>
@@ -247,7 +247,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;inboxDataGridView.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Send_Button.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
@@ -372,33 +372,6 @@
   <data name="&gt;&gt;To_Label.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Status_textbox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="Status_textbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>30, 391</value>
-  </data>
-  <data name="Status_textbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>835, 23</value>
-  </data>
-  <data name="Status_textbox.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="Status_textbox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
-    <value>Center</value>
-  </data>
-  <data name="&gt;&gt;Status_textbox.Name" xml:space="preserve">
-    <value>Status_textbox</value>
-  </data>
-  <data name="&gt;&gt;Status_textbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Status_textbox.Parent" xml:space="preserve">
-    <value>Mail_Groupbox</value>
-  </data>
-  <data name="&gt;&gt;Status_textbox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="Subject_textbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 71</value>
   </data>
@@ -406,7 +379,7 @@
     <value>408, 20</value>
   </data>
   <data name="Subject_textbox.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;Subject_textbox.Name" xml:space="preserve">
     <value>Subject_textbox</value>
@@ -418,7 +391,7 @@
     <value>Mail_Groupbox</value>
   </data>
   <data name="&gt;&gt;Subject_textbox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="Message_textbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>30, 131</value>
@@ -430,7 +403,7 @@
     <value>835, 254</value>
   </data>
   <data name="Message_textbox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;Message_textbox.Name" xml:space="preserve">
     <value>Message_textbox</value>
@@ -442,7 +415,7 @@
     <value>Mail_Groupbox</value>
   </data>
   <data name="&gt;&gt;Message_textbox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="To_textbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 45</value>
@@ -451,7 +424,7 @@
     <value>408, 20</value>
   </data>
   <data name="To_textbox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;To_textbox.Name" xml:space="preserve">
     <value>To_textbox</value>
@@ -463,7 +436,7 @@
     <value>Mail_Groupbox</value>
   </data>
   <data name="&gt;&gt;To_textbox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="Mail_Groupbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 107</value>
@@ -487,10 +460,49 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Mail_Groupbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="StatusStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="StatusStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 599</value>
+  </data>
+  <data name="StatusStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1009, 22</value>
+  </data>
+  <data name="StatusStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="StatusStrip.Text" xml:space="preserve">
+    <value>statusStrip1</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.Name" xml:space="preserve">
+    <value>StatusStrip</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StatusStrip.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
+  <data name="StripProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 16</value>
+  </data>
+  <data name="StripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>40</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -500,6 +512,24 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>h</value>
+  </data>
+  <data name="&gt;&gt;toolStripProgressBar1.Name" xml:space="preserve">
+    <value>toolStripProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;toolStripProgressBar1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StripProgressBar.Name" xml:space="preserve">
+    <value>StripProgressBar</value>
+  </data>
+  <data name="&gt;&gt;StripProgressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StripStatusLabel.Name" xml:space="preserve">
+    <value>StripStatusLabel</value>
+  </data>
+  <data name="&gt;&gt;StripStatusLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>
