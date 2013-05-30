@@ -13,14 +13,15 @@ namespace EmailClient
 {
     public partial class ShowMail : Form
     {
+
         public ShowMail(string to, string from, string subject, string message)
         {
             InitializeComponent();
-            ToLblText.Text = to;
-            FromLblText.Text = from;
-            SubjectLblText.Text = subject;
-            ShowMailTextBox.BackColor = Color.White;
-            ShowMailTextBox.Text = message;
+            this.ToLblText.Text = to;
+            this.FromLblText.Text = from;
+            this.SubjectLblText.Text = subject;
+            this.ShowMailTextBox.BackColor = Color.White;
+            this.ShowMailTextBox.Text = message;
             /* Set title of window */
             this.Text = subject;
         }
@@ -43,5 +44,12 @@ namespace EmailClient
             printDocument.PrintPage += PrintDocumentOnPrintPage;
             printDocument.Print();
         }
+
+        private void BtnDecrypt_Click(object sender, EventArgs e)
+        {
+            string plaintext = Crypto.DecryptStringAES(this.ShowMailTextBox.Text, this.textBoxAESKey.Text);
+            this.ShowMailTextBox.Text = plaintext;
+        }
+
     }
 }

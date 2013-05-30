@@ -36,6 +36,7 @@ namespace EmailClient
                 // Create a RijndaelManaged object
                 aesAlg = new RijndaelManaged();
                 aesAlg.Key = key.GetBytes(aesAlg.KeySize / 8);
+                aesAlg.Padding = PaddingMode.None;
 
                 // Create a decryptor to perform the stream transform.
                 ICryptoTransform encryptor = aesAlg.CreateEncryptor(aesAlg.Key, aesAlg.IV);
@@ -54,6 +55,8 @@ namespace EmailClient
                             swEncrypt.Write(plainText);
                         }
                     }
+
+                    //outStr = Convert.ToBase64String(ByteArrayPadUnpad(msEncrypt.ToArray(), "pad"));
                     outStr = Convert.ToBase64String(msEncrypt.ToArray());
                 }
             }
@@ -101,6 +104,7 @@ namespace EmailClient
                     // Create a RijndaelManaged object
                     // with the specified key and IV.
                     aesAlg = new RijndaelManaged();
+                    aesAlg.Padding = PaddingMode.None;
                     aesAlg.Key = key.GetBytes(aesAlg.KeySize / 8);
                     // Get the initialization vector from the encrypted stream
                     aesAlg.IV = ReadByteArray(msDecrypt);
@@ -141,6 +145,27 @@ namespace EmailClient
             }
 
             return buffer;
+        }
+
+        private static byte[] ByteArrayPadUnpad(byte[] byteArray, string strOperation)
+        {
+            //  this is used to prevent SQL Server from truncating the last (presumably null)
+            //    byte from an array when saving
+            //  if strOperation = "pad", this appends one byte to the end of the input byte array
+            //  if strOperation = "unpad", it removes the last byte from the array
+
+            if (strOperation == "pad")
+            {
+                byte bytePad = Convert.ToByte(9);
+                Array.Resize(ref byteArray, byteArray.Length + 1);
+                byteArray[byteArray.Length - 1] = bytePad;
+            }
+            else if (strOperation == "unpad")
+            {
+                Array.Resize(ref byteArray, byteArray.Length - 1);
+            }
+
+            return byteArray;
         }
     }
 }

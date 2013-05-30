@@ -7,12 +7,13 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 using Setting = EmailClient.Properties.Settings;
+using System.Diagnostics;
 
 namespace EmailClient
 {
     class SMTPClient
     {
-        public static bool Send(string to, string subject, string message)
+        public static bool Send(string to, string subject, string message, bool encrypt)
         {
             bool flag = true;
             SmtpClient Client = new SmtpClient(Setting.Default.smtp_server, Setting.Default.smtp_port);
@@ -21,8 +22,17 @@ namespace EmailClient
             msg.From = new MailAddress(Setting.Default.username, "C#EmailClient");
             msg.To.Add(new MailAddress(to));
             msg.Subject = subject;
-            msg.Body = Crypto.EncryptStringAES(message, "SUPERMAIL");
-            Client.EnableSsl = true;
+            if (encrypt)
+            {
+                msg.Body = Crypto.EncryptStringAES(message, Setting.Default.aes_key);
+                Debug.WriteLine("Encrypted: " + msg.Body);
+            }
+            else
+            {
+                msg.Body = message;
+            }
+            
+            Client.EnableSsl = Setting.Default.smtp_ssl;
             try
             {
                 Client.Send(msg);

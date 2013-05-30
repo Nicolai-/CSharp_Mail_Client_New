@@ -29,5 +29,8 @@
     <Setting Name="pop3_ssl" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="aes_key" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SUPERFUCKINGMAIL</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

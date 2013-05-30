@@ -127,5 +127,17 @@ namespace EmailClient.Properties {
                 this["pop3_ssl"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("SUPERFUCKINGMAIL")]
+        public string aes_key {
+            get {
+                return ((string)(this["aes_key"]));
+            }
+            set {
+                this["aes_key"] = value;
+            }
+        }
     }
 }

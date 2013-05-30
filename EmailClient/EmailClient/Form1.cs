@@ -33,6 +33,9 @@ namespace EmailClient
             worker.DoWork += new DoWorkEventHandler(POPClient.GetAllMails);
             worker.ProgressChanged += new ProgressChangedEventHandler(WorkerProgressChanged);
             worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(WorkerRunCompleted);
+
+            dbHandler = new DBHandler();
+
         }
         void Form1_Load(object sender, EventArgs e)
         {
@@ -57,7 +60,6 @@ namespace EmailClient
             inboxDataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
 
             /* Get all Subjects and Senders from DB */
-            dbHandler = new DBHandler();
             inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
         }
 
@@ -73,7 +75,7 @@ namespace EmailClient
             StripProgressBar.Value = 0;
             if (ActiveWindow == "inbox")
             {
-                dbHandler = new DBHandler();
+                //dbHandler = new DBHandler();
                 inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
             }
         }
@@ -104,7 +106,7 @@ namespace EmailClient
             string mail_id = inboxDataGridView.Rows[e.RowIndex].Cells["Mail-ID"].FormattedValue.ToString();
             
             MailContent = new Dictionary<string,string>();
-            dbHandler = new DBHandler();
+            //dbHandler = new DBHandler();
 
             MailContent = dbHandler.GetFullMailFromMailID(mail_id);
             ShowMailWindow = new ShowMail(MailContent["recipient"],MailContent["sender"], MailContent["subject"],MailContent["message"]);
@@ -125,7 +127,7 @@ namespace EmailClient
 
         private void Send_Button_Click(object sender, EventArgs e)
         {
-            bool flag = SMTPClient.Send(To_textbox.Text, Subject_textbox.Text, Message_textbox.Text);
+            bool flag = SMTPClient.Send(To_textbox.Text, Subject_textbox.Text, Message_textbox.Text, this.checkBoxEncrypt.Checked);
             if (flag == true)
             {
                 StripStatusLabel.Text = "Sucess ! 1 Email send from the nr 1 email client"; 

@@ -48,9 +48,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emailConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danishToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.emailConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBoxEncrypt = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).BeginInit();
             this.Mail_Groupbox.SuspendLayout();
             this.StatusStrip.SuspendLayout();
@@ -99,6 +100,7 @@
             // 
             // Mail_Groupbox
             // 
+            this.Mail_Groupbox.Controls.Add(this.checkBoxEncrypt);
             this.Mail_Groupbox.Controls.Add(this.Send_Button);
             this.Mail_Groupbox.Controls.Add(this.Message_Label);
             this.Mail_Groupbox.Controls.Add(this.Subject_Label);
@@ -198,12 +200,6 @@
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
-            // emailConfigurationToolStripMenuItem
-            // 
-            this.emailConfigurationToolStripMenuItem.Name = "emailConfigurationToolStripMenuItem";
-            resources.ApplyResources(this.emailConfigurationToolStripMenuItem, "emailConfigurationToolStripMenuItem");
-            this.emailConfigurationToolStripMenuItem.Click += new System.EventHandler(this.emailConfigurationToolStripMenuItem_Click);
-            // 
             // danishToolStripMenuItem
             // 
             this.danishToolStripMenuItem.Name = "danishToolStripMenuItem";
@@ -213,6 +209,18 @@
             // 
             this.danishToolStripMenuItem1.Name = "danishToolStripMenuItem1";
             resources.ApplyResources(this.danishToolStripMenuItem1, "danishToolStripMenuItem1");
+            // 
+            // emailConfigurationToolStripMenuItem
+            // 
+            this.emailConfigurationToolStripMenuItem.Name = "emailConfigurationToolStripMenuItem";
+            resources.ApplyResources(this.emailConfigurationToolStripMenuItem, "emailConfigurationToolStripMenuItem");
+            this.emailConfigurationToolStripMenuItem.Click += new System.EventHandler(this.emailConfigurationToolStripMenuItem_Click);
+            // 
+            // checkBoxEncrypt
+            // 
+            resources.ApplyResources(this.checkBoxEncrypt, "checkBoxEncrypt");
+            this.checkBoxEncrypt.Name = "checkBoxEncrypt";
+            this.checkBoxEncrypt.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -263,6 +271,7 @@
         private System.Windows.Forms.ToolStripMenuItem danishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem danishToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem emailConfigurationToolStripMenuItem;
+        private System.Windows.Forms.CheckBox checkBoxEncrypt;
     }
 }
 

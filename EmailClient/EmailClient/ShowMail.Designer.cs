@@ -36,6 +36,9 @@
             this.SubjectLblText = new System.Windows.Forms.Label();
             this.ShowMailTextBox = new System.Windows.Forms.RichTextBox();
             this.Print_button = new System.Windows.Forms.Button();
+            this.textBoxAESKey = new System.Windows.Forms.TextBox();
+            this.LblAESKey = new System.Windows.Forms.Label();
+            this.BtnDecrypt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ToLbl
@@ -101,7 +104,7 @@
             // 
             // Print_button
             // 
-            this.Print_button.Location = new System.Drawing.Point(526, 19);
+            this.Print_button.Location = new System.Drawing.Point(531, 48);
             this.Print_button.Name = "Print_button";
             this.Print_button.Size = new System.Drawing.Size(75, 23);
             this.Print_button.TabIndex = 9;
@@ -109,11 +112,40 @@
             this.Print_button.UseVisualStyleBackColor = true;
             this.Print_button.Click += new System.EventHandler(this.Print_button_Click);
             // 
+            // textBoxAESKey
+            // 
+            this.textBoxAESKey.Location = new System.Drawing.Point(531, 19);
+            this.textBoxAESKey.Name = "textBoxAESKey";
+            this.textBoxAESKey.Size = new System.Drawing.Size(205, 20);
+            this.textBoxAESKey.TabIndex = 10;
+            // 
+            // LblAESKey
+            // 
+            this.LblAESKey.AutoSize = true;
+            this.LblAESKey.Location = new System.Drawing.Point(473, 22);
+            this.LblAESKey.Name = "LblAESKey";
+            this.LblAESKey.Size = new System.Drawing.Size(52, 13);
+            this.LblAESKey.TabIndex = 11;
+            this.LblAESKey.Text = "AES KEY";
+            // 
+            // BtnDecrypt
+            // 
+            this.BtnDecrypt.Location = new System.Drawing.Point(661, 48);
+            this.BtnDecrypt.Name = "BtnDecrypt";
+            this.BtnDecrypt.Size = new System.Drawing.Size(75, 23);
+            this.BtnDecrypt.TabIndex = 12;
+            this.BtnDecrypt.Text = "Decrypt";
+            this.BtnDecrypt.UseVisualStyleBackColor = true;
+            this.BtnDecrypt.Click += new System.EventHandler(this.BtnDecrypt_Click);
+            // 
             // ShowMail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(760, 614);
+            this.Controls.Add(this.BtnDecrypt);
+            this.Controls.Add(this.LblAESKey);
+            this.Controls.Add(this.textBoxAESKey);
             this.Controls.Add(this.Print_button);
             this.Controls.Add(this.ShowMailTextBox);
             this.Controls.Add(this.SubjectLblText);
@@ -140,5 +172,8 @@
         private System.Windows.Forms.Label SubjectLblText;
         private System.Windows.Forms.RichTextBox ShowMailTextBox;
         private System.Windows.Forms.Button Print_button;
+        private System.Windows.Forms.TextBox textBoxAESKey;
+        private System.Windows.Forms.Label LblAESKey;
+        private System.Windows.Forms.Button BtnDecrypt;
     }
 }
