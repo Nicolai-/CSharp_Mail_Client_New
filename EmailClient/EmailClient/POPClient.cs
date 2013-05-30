@@ -20,7 +20,7 @@ namespace EmailClient
 
             using(Pop3Client client = new Pop3Client())
             {
-                client.Connect(Setting.Default.pop3_server, Setting.Default.pop3_port, Setting.Default.ssl);
+                client.Connect(Setting.Default.pop3_server, Setting.Default.pop3_port, Setting.Default.smtp_ssl);
 
                 client.Authenticate(Setting.Default.username, Setting.Default.password);
 

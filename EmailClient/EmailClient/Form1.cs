@@ -20,6 +20,7 @@ namespace EmailClient
         DataTable table;
         DBHandler dbHandler;
         ShowMail ShowMailWindow;
+        EmailConfiguration ConfigWindow;
         Dictionary<string, string> MailContent;
         private BackgroundWorker worker;
 
@@ -136,6 +137,12 @@ namespace EmailClient
             {
                 StripStatusLabel.Text = "Error ! you fucked up.. sorry...";
             }
+        }
+
+        private void emailConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConfigWindow = new EmailConfiguration();
+            ConfigWindow.Show();
         }
  
 

@@ -29,7 +29,7 @@ namespace EmailClient
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Do you know the difference between an error and a mistake " + ex.Message);
+                MessageBox.Show("Do you know the difference between an error and a mistake: " + ex.Message);
                 flag = false;
             }
             return flag;
