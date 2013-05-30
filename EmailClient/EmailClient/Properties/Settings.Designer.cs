@@ -139,5 +139,17 @@ namespace EmailClient.Properties {
                 this["aes_key"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C#EmailClient")]
+        public string sender_name {
+            get {
+                return ((string)(this["sender_name"]));
+            }
+            set {
+                this["sender_name"] = value;
+            }
+        }
     }
 }

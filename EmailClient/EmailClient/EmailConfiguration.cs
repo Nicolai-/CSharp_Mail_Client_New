@@ -38,6 +38,7 @@ namespace EmailClient
             this.checkBoxPop3SSL.Checked = Setting.Default.pop3_ssl;
 
             this.textBoxAESKey.Text = Setting.Default.aes_key;
+            this.textBoxSenderName.Text = Setting.Default.sender_name;
 
         }
 
@@ -52,7 +53,7 @@ namespace EmailClient
             Setting.Default.Save();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnPop3Apply_Click(object sender, EventArgs e)
         {
             Setting.Default.pop3_server = this.textBoxPop3Address.Text;
             Setting.Default.pop3_port = Convert.ToInt32(this.textBoxPop3Port.Text);
@@ -63,9 +64,10 @@ namespace EmailClient
             Setting.Default.Save();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnGeneralApply_Click(object sender, EventArgs e)
         {
             Setting.Default.aes_key = this.textBoxAESKey.Text;
+            Setting.Default.sender_name = this.textBoxSenderName.Text;
         }
     }
 }

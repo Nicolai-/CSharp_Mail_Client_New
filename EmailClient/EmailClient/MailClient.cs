@@ -46,12 +46,8 @@ namespace EmailClient
             sendWorker = new BackgroundWorker();
             sendWorker.DoWork += new DoWorkEventHandler(smtp.Send);
             sendWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(sendWorkerRunCompleted);
-
-
-
-
-
         }
+
         void Form1_Load(object sender, EventArgs e)
         {
             this.Text = "Super Mail Klient by Mathias & Nicolai";

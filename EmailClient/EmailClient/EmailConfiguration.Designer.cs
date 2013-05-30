@@ -30,6 +30,9 @@
         {
             this.TabGeneral = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxAESKey = new System.Windows.Forms.TextBox();
+            this.LblAES = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.BtnSmtpApply = new System.Windows.Forms.Button();
             this.textBoxSmtpPassword = new System.Windows.Forms.TextBox();
@@ -52,9 +55,8 @@
             this.LblPop3Username = new System.Windows.Forms.Label();
             this.LblPop3Port = new System.Windows.Forms.Label();
             this.LblPop3Address = new System.Windows.Forms.Label();
-            this.LblAES = new System.Windows.Forms.Label();
-            this.textBoxAESKey = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.labelSenderName = new System.Windows.Forms.Label();
+            this.textBoxSenderName = new System.Windows.Forms.TextBox();
             this.TabGeneral.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -74,6 +76,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.textBoxSenderName);
+            this.tabPage1.Controls.Add(this.labelSenderName);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.textBoxAESKey);
             this.tabPage1.Controls.Add(this.LblAES);
@@ -84,6 +88,33 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "General";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(399, 192);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Apply";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.BtnGeneralApply_Click);
+            // 
+            // textBoxAESKey
+            // 
+            this.textBoxAESKey.Location = new System.Drawing.Point(90, 10);
+            this.textBoxAESKey.Name = "textBoxAESKey";
+            this.textBoxAESKey.Size = new System.Drawing.Size(362, 20);
+            this.textBoxAESKey.TabIndex = 1;
+            // 
+            // LblAES
+            // 
+            this.LblAES.AutoSize = true;
+            this.LblAES.Location = new System.Drawing.Point(6, 13);
+            this.LblAES.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.LblAES.Name = "LblAES";
+            this.LblAES.Size = new System.Drawing.Size(49, 13);
+            this.LblAES.TabIndex = 0;
+            this.LblAES.Text = "AES Key";
             // 
             // tabPage2
             // 
@@ -224,7 +255,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Apply";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.BtnPop3Apply_Click);
             // 
             // textBoxPop3Password
             // 
@@ -307,32 +338,22 @@
             this.LblPop3Address.TabIndex = 10;
             this.LblPop3Address.Text = "Server Address";
             // 
-            // LblAES
+            // labelSenderName
             // 
-            this.LblAES.AutoSize = true;
-            this.LblAES.Location = new System.Drawing.Point(6, 13);
-            this.LblAES.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.LblAES.Name = "LblAES";
-            this.LblAES.Size = new System.Drawing.Size(49, 13);
-            this.LblAES.TabIndex = 0;
-            this.LblAES.Text = "AES Key";
+            this.labelSenderName.AutoSize = true;
+            this.labelSenderName.Location = new System.Drawing.Point(6, 46);
+            this.labelSenderName.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.labelSenderName.Name = "labelSenderName";
+            this.labelSenderName.Size = new System.Drawing.Size(72, 13);
+            this.labelSenderName.TabIndex = 12;
+            this.labelSenderName.Text = "Sender Name";
             // 
-            // textBoxAESKey
+            // textBoxSenderName
             // 
-            this.textBoxAESKey.Location = new System.Drawing.Point(61, 10);
-            this.textBoxAESKey.Name = "textBoxAESKey";
-            this.textBoxAESKey.Size = new System.Drawing.Size(362, 20);
-            this.textBoxAESKey.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(399, 192);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Apply";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.textBoxSenderName.Location = new System.Drawing.Point(90, 46);
+            this.textBoxSenderName.Name = "textBoxSenderName";
+            this.textBoxSenderName.Size = new System.Drawing.Size(362, 20);
+            this.textBoxSenderName.TabIndex = 13;
             // 
             // EmailConfiguration
             // 
@@ -382,5 +403,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBoxAESKey;
         private System.Windows.Forms.Label LblAES;
+        private System.Windows.Forms.TextBox textBoxSenderName;
+        private System.Windows.Forms.Label labelSenderName;
     }
 }

@@ -32,5 +32,8 @@
     <Setting Name="aes_key" Type="System.String" Scope="User">
       <Value Profile="(Default)">SUPERFUCKINGMAIL</Value>
     </Setting>
+    <Setting Name="sender_name" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C#EmailClient</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

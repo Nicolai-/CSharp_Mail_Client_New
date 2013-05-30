@@ -21,7 +21,7 @@ namespace EmailClient
             SmtpClient Client = new SmtpClient(Setting.Default.smtp_server, Setting.Default.smtp_port);
             Client.Credentials = new NetworkCredential(Setting.Default.username, Setting.Default.password);
             MailMessage msg = new MailMessage();
-            msg.From = new MailAddress(Setting.Default.username, "C#EmailClient");
+            msg.From = new MailAddress(Setting.Default.username, Setting.Default.sender_name);
             msg.To.Add(new MailAddress(Convert.ToString(generic[0])));
             msg.Subject = Convert.ToString(generic[1]);
             string rawmsg = Convert.ToString(generic[2]);
@@ -43,7 +43,7 @@ namespace EmailClient
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Do you know the difference between an error and a mistake: " + ex.Message);
+                MessageBox.Show("Error Message: " + ex.Message);
                 flag = false;
             }
             e.Result = flag;
