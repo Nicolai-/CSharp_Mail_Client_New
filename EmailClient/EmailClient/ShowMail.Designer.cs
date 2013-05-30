@@ -104,11 +104,11 @@
             // 
             // Print_button
             // 
-            this.Print_button.Location = new System.Drawing.Point(531, 48);
+            this.Print_button.Location = new System.Drawing.Point(661, 80);
             this.Print_button.Name = "Print_button";
             this.Print_button.Size = new System.Drawing.Size(75, 23);
             this.Print_button.TabIndex = 9;
-            this.Print_button.Text = "Print";
+            this.Print_button.Text = "Print Email";
             this.Print_button.UseVisualStyleBackColor = true;
             this.Print_button.Click += new System.EventHandler(this.Print_button_Click);
             // 

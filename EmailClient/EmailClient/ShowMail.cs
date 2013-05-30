@@ -47,7 +47,7 @@ namespace EmailClient
 
         private void BtnDecrypt_Click(object sender, EventArgs e)
         {
-            string plaintext = Crypto.DecryptStringAES(this.ShowMailTextBox.Text, this.textBoxAESKey.Text);
+            string plaintext = Crypto.DecryptStringAES(this.ShowMailTextBox.Text.Trim(), this.textBoxAESKey.Text);
             this.ShowMailTextBox.Text = plaintext;
         }
 

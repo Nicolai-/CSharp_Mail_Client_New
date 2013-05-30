@@ -37,6 +37,8 @@ namespace EmailClient
             this.textBoxPop3Password.Text = Setting.Default.password;
             this.checkBoxPop3SSL.Checked = Setting.Default.pop3_ssl;
 
+            this.textBoxAESKey.Text = Setting.Default.aes_key;
+
         }
 
         private void BtnSmtpApply_Click(object sender, EventArgs e)
@@ -59,6 +61,11 @@ namespace EmailClient
             Setting.Default.pop3_ssl = this.checkBoxPop3SSL.Checked;
             Debug.WriteLine("Checkbox value: " + this.checkBoxPop3SSL.Checked);
             Setting.Default.Save();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Setting.Default.aes_key = this.textBoxAESKey.Text;
         }
     }
 }

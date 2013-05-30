@@ -13,10 +13,11 @@ namespace EmailClient
 {
     class DBHandler
     {
-        public static SQLiteConnection DbConn = new SQLiteConnection("Data source=" + Setting.Default.db_file_name + ";Version=3;");
+        public static SQLiteConnection DbConn;
 
         public DBHandler()
         {
+            DbConn = new SQLiteConnection("Data source=" + Setting.Default.db_file_name + ";Version=3;");
             // Sql string to create database with a table to store inbox emails.
             string sql = "CREATE TABLE IF NOT EXISTS mailInbox (mailid INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " +
                 "sender NVARCHAR(100) NOT NULL, " +

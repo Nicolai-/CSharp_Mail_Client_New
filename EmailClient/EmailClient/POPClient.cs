@@ -14,7 +14,7 @@ namespace EmailClient
     class POPClient
     {
 
-        public static void GetAllMails(object sender, DoWorkEventArgs e)
+        public void GetAllMails(object sender, DoWorkEventArgs e)
         {
             int percentComplete;
 

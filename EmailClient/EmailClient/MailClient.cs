@@ -14,27 +14,42 @@ using System.Diagnostics;
 
 namespace EmailClient
 {
-    public partial class Form1 : Form
+    public partial class MailClient : Form
     {
+        private BackgroundWorker worker;
+        private BackgroundWorker sendWorker;
+
         string ActiveWindow;
         DataTable table;
         DBHandler dbHandler;
         ShowMail ShowMailWindow;
         EmailConfiguration ConfigWindow;
         Dictionary<string, string> MailContent;
-        private BackgroundWorker worker;
 
-        public Form1()
+        POPClient pop3;
+        SMTPClient smtp;
+
+        public MailClient()
         {
             this.Load += Form1_Load;
             InitializeComponent();
+            pop3 = new POPClient();
+            smtp = new SMTPClient();
+            dbHandler = new DBHandler();
+
             worker = new BackgroundWorker();
             worker.WorkerReportsProgress = true;
-            worker.DoWork += new DoWorkEventHandler(POPClient.GetAllMails);
+            worker.DoWork += new DoWorkEventHandler(pop3.GetAllMails);
             worker.ProgressChanged += new ProgressChangedEventHandler(WorkerProgressChanged);
             worker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(WorkerRunCompleted);
 
-            dbHandler = new DBHandler();
+            sendWorker = new BackgroundWorker();
+            sendWorker.DoWork += new DoWorkEventHandler(smtp.Send);
+            sendWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(sendWorkerRunCompleted);
+
+
+
+
 
         }
         void Form1_Load(object sender, EventArgs e)
@@ -127,19 +142,35 @@ namespace EmailClient
 
         private void Send_Button_Click(object sender, EventArgs e)
         {
-            bool flag = SMTPClient.Send(To_textbox.Text, Subject_textbox.Text, Message_textbox.Text, this.checkBoxEncrypt.Checked);
+            List<object> arguments = new List<object>();
+            arguments.Add(To_textbox.Text);
+            arguments.Add(Subject_textbox.Text);
+            arguments.Add(Message_textbox.Text);
+            arguments.Add(this.checkBoxEncrypt.Checked);
+
+            if (!sendWorker.IsBusy)
+            {
+                sendWorker.RunWorkerAsync(arguments);
+            }
+        }
+
+        private void sendWorkerRunCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            bool flag = Convert.ToBoolean(e.Result);
             if (flag == true)
             {
-                StripStatusLabel.Text = "Sucess ! 1 Email send from the nr 1 email client"; 
+                StripStatusLabel.Text = "Sucess ! 1 Email send from the nr 1 email client";
                 To_textbox.Text = string.Empty;
                 Subject_textbox.Text = string.Empty;
                 Message_textbox.Text = string.Empty;
+                checkBoxEncrypt.Checked = false;
             }
             else
             {
                 StripStatusLabel.Text = "Error ! you fucked up.. sorry...";
             }
         }
+        
 
         private void emailConfigurationToolStripMenuItem_Click(object sender, EventArgs e)
         {

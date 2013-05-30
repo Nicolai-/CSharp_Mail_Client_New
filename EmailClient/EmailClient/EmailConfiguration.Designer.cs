@@ -31,17 +31,18 @@
             this.TabGeneral = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.LblSmtpAddress = new System.Windows.Forms.Label();
-            this.LblSmtpPort = new System.Windows.Forms.Label();
-            this.LblSmtpUsername = new System.Windows.Forms.Label();
-            this.LblSmtpPassword = new System.Windows.Forms.Label();
-            this.CheckBoxSmtpSSL = new System.Windows.Forms.CheckBox();
-            this.textBoxSmtpAddress = new System.Windows.Forms.TextBox();
-            this.textBoxSmtpPort = new System.Windows.Forms.TextBox();
-            this.textBoxSmtpUsername = new System.Windows.Forms.TextBox();
-            this.textBoxSmtpPassword = new System.Windows.Forms.TextBox();
             this.BtnSmtpApply = new System.Windows.Forms.Button();
+            this.textBoxSmtpPassword = new System.Windows.Forms.TextBox();
+            this.textBoxSmtpUsername = new System.Windows.Forms.TextBox();
+            this.textBoxSmtpPort = new System.Windows.Forms.TextBox();
+            this.textBoxSmtpAddress = new System.Windows.Forms.TextBox();
+            this.CheckBoxSmtpSSL = new System.Windows.Forms.CheckBox();
+            this.LblSmtpPassword = new System.Windows.Forms.Label();
+            this.LblSmtpUsername = new System.Windows.Forms.Label();
+            this.LblSmtpPort = new System.Windows.Forms.Label();
+            this.LblSmtpAddress = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBoxPop3Password = new System.Windows.Forms.TextBox();
             this.textBoxPop3Username = new System.Windows.Forms.TextBox();
             this.textBoxPop3Port = new System.Windows.Forms.TextBox();
@@ -51,8 +52,11 @@
             this.LblPop3Username = new System.Windows.Forms.Label();
             this.LblPop3Port = new System.Windows.Forms.Label();
             this.LblPop3Address = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LblAES = new System.Windows.Forms.Label();
+            this.textBoxAESKey = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.TabGeneral.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +74,9 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button2);
+            this.tabPage1.Controls.Add(this.textBoxAESKey);
+            this.tabPage1.Controls.Add(this.LblAES);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -98,6 +105,97 @@
             this.tabPage2.Text = "SMTP";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // BtnSmtpApply
+            // 
+            this.BtnSmtpApply.Location = new System.Drawing.Point(399, 192);
+            this.BtnSmtpApply.Name = "BtnSmtpApply";
+            this.BtnSmtpApply.Size = new System.Drawing.Size(75, 23);
+            this.BtnSmtpApply.TabIndex = 10;
+            this.BtnSmtpApply.Text = "Apply";
+            this.BtnSmtpApply.UseVisualStyleBackColor = true;
+            this.BtnSmtpApply.Click += new System.EventHandler(this.BtnSmtpApply_Click);
+            // 
+            // textBoxSmtpPassword
+            // 
+            this.textBoxSmtpPassword.Location = new System.Drawing.Point(91, 109);
+            this.textBoxSmtpPassword.Name = "textBoxSmtpPassword";
+            this.textBoxSmtpPassword.Size = new System.Drawing.Size(287, 20);
+            this.textBoxSmtpPassword.TabIndex = 9;
+            this.textBoxSmtpPassword.UseSystemPasswordChar = true;
+            // 
+            // textBoxSmtpUsername
+            // 
+            this.textBoxSmtpUsername.Location = new System.Drawing.Point(91, 76);
+            this.textBoxSmtpUsername.Name = "textBoxSmtpUsername";
+            this.textBoxSmtpUsername.Size = new System.Drawing.Size(287, 20);
+            this.textBoxSmtpUsername.TabIndex = 8;
+            // 
+            // textBoxSmtpPort
+            // 
+            this.textBoxSmtpPort.Location = new System.Drawing.Point(91, 46);
+            this.textBoxSmtpPort.Name = "textBoxSmtpPort";
+            this.textBoxSmtpPort.Size = new System.Drawing.Size(287, 20);
+            this.textBoxSmtpPort.TabIndex = 7;
+            // 
+            // textBoxSmtpAddress
+            // 
+            this.textBoxSmtpAddress.Location = new System.Drawing.Point(91, 13);
+            this.textBoxSmtpAddress.Name = "textBoxSmtpAddress";
+            this.textBoxSmtpAddress.Size = new System.Drawing.Size(287, 20);
+            this.textBoxSmtpAddress.TabIndex = 6;
+            // 
+            // CheckBoxSmtpSSL
+            // 
+            this.CheckBoxSmtpSSL.AutoSize = true;
+            this.CheckBoxSmtpSSL.CheckAlign = System.Drawing.ContentAlignment.TopRight;
+            this.CheckBoxSmtpSSL.Location = new System.Drawing.Point(9, 145);
+            this.CheckBoxSmtpSSL.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
+            this.CheckBoxSmtpSSL.Name = "CheckBoxSmtpSSL";
+            this.CheckBoxSmtpSSL.Size = new System.Drawing.Size(46, 17);
+            this.CheckBoxSmtpSSL.TabIndex = 5;
+            this.CheckBoxSmtpSSL.Text = "SSL";
+            this.CheckBoxSmtpSSL.UseVisualStyleBackColor = true;
+            // 
+            // LblSmtpPassword
+            // 
+            this.LblSmtpPassword.AutoSize = true;
+            this.LblSmtpPassword.Location = new System.Drawing.Point(6, 112);
+            this.LblSmtpPassword.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.LblSmtpPassword.Name = "LblSmtpPassword";
+            this.LblSmtpPassword.Size = new System.Drawing.Size(53, 13);
+            this.LblSmtpPassword.TabIndex = 3;
+            this.LblSmtpPassword.Text = "Password";
+            // 
+            // LblSmtpUsername
+            // 
+            this.LblSmtpUsername.AutoSize = true;
+            this.LblSmtpUsername.Location = new System.Drawing.Point(6, 79);
+            this.LblSmtpUsername.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.LblSmtpUsername.Name = "LblSmtpUsername";
+            this.LblSmtpUsername.Size = new System.Drawing.Size(55, 13);
+            this.LblSmtpUsername.TabIndex = 2;
+            this.LblSmtpUsername.Text = "Username";
+            // 
+            // LblSmtpPort
+            // 
+            this.LblSmtpPort.AutoSize = true;
+            this.LblSmtpPort.Location = new System.Drawing.Point(6, 46);
+            this.LblSmtpPort.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.LblSmtpPort.Name = "LblSmtpPort";
+            this.LblSmtpPort.Size = new System.Drawing.Size(26, 13);
+            this.LblSmtpPort.TabIndex = 1;
+            this.LblSmtpPort.Text = "Port";
+            // 
+            // LblSmtpAddress
+            // 
+            this.LblSmtpAddress.AutoSize = true;
+            this.LblSmtpAddress.Location = new System.Drawing.Point(6, 13);
+            this.LblSmtpAddress.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.LblSmtpAddress.Name = "LblSmtpAddress";
+            this.LblSmtpAddress.Size = new System.Drawing.Size(79, 13);
+            this.LblSmtpAddress.TabIndex = 0;
+            this.LblSmtpAddress.Text = "Server Address";
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.button1);
@@ -118,96 +216,15 @@
             this.tabPage3.Text = "POP3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // LblSmtpAddress
+            // button1
             // 
-            this.LblSmtpAddress.AutoSize = true;
-            this.LblSmtpAddress.Location = new System.Drawing.Point(6, 13);
-            this.LblSmtpAddress.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.LblSmtpAddress.Name = "LblSmtpAddress";
-            this.LblSmtpAddress.Size = new System.Drawing.Size(79, 13);
-            this.LblSmtpAddress.TabIndex = 0;
-            this.LblSmtpAddress.Text = "Server Address";
-            // 
-            // LblSmtpPort
-            // 
-            this.LblSmtpPort.AutoSize = true;
-            this.LblSmtpPort.Location = new System.Drawing.Point(6, 46);
-            this.LblSmtpPort.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.LblSmtpPort.Name = "LblSmtpPort";
-            this.LblSmtpPort.Size = new System.Drawing.Size(26, 13);
-            this.LblSmtpPort.TabIndex = 1;
-            this.LblSmtpPort.Text = "Port";
-            // 
-            // LblSmtpUsername
-            // 
-            this.LblSmtpUsername.AutoSize = true;
-            this.LblSmtpUsername.Location = new System.Drawing.Point(6, 79);
-            this.LblSmtpUsername.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.LblSmtpUsername.Name = "LblSmtpUsername";
-            this.LblSmtpUsername.Size = new System.Drawing.Size(55, 13);
-            this.LblSmtpUsername.TabIndex = 2;
-            this.LblSmtpUsername.Text = "Username";
-            // 
-            // LblSmtpPassword
-            // 
-            this.LblSmtpPassword.AutoSize = true;
-            this.LblSmtpPassword.Location = new System.Drawing.Point(6, 112);
-            this.LblSmtpPassword.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
-            this.LblSmtpPassword.Name = "LblSmtpPassword";
-            this.LblSmtpPassword.Size = new System.Drawing.Size(53, 13);
-            this.LblSmtpPassword.TabIndex = 3;
-            this.LblSmtpPassword.Text = "Password";
-            // 
-            // CheckBoxSmtpSSL
-            // 
-            this.CheckBoxSmtpSSL.AutoSize = true;
-            this.CheckBoxSmtpSSL.CheckAlign = System.Drawing.ContentAlignment.TopRight;
-            this.CheckBoxSmtpSSL.Location = new System.Drawing.Point(9, 145);
-            this.CheckBoxSmtpSSL.Margin = new System.Windows.Forms.Padding(3, 10, 3, 3);
-            this.CheckBoxSmtpSSL.Name = "CheckBoxSmtpSSL";
-            this.CheckBoxSmtpSSL.Size = new System.Drawing.Size(46, 17);
-            this.CheckBoxSmtpSSL.TabIndex = 5;
-            this.CheckBoxSmtpSSL.Text = "SSL";
-            this.CheckBoxSmtpSSL.UseVisualStyleBackColor = true;
-            // 
-            // textBoxSmtpAddress
-            // 
-            this.textBoxSmtpAddress.Location = new System.Drawing.Point(91, 13);
-            this.textBoxSmtpAddress.Name = "textBoxSmtpAddress";
-            this.textBoxSmtpAddress.Size = new System.Drawing.Size(287, 20);
-            this.textBoxSmtpAddress.TabIndex = 6;
-            // 
-            // textBoxSmtpPort
-            // 
-            this.textBoxSmtpPort.Location = new System.Drawing.Point(91, 46);
-            this.textBoxSmtpPort.Name = "textBoxSmtpPort";
-            this.textBoxSmtpPort.Size = new System.Drawing.Size(287, 20);
-            this.textBoxSmtpPort.TabIndex = 7;
-            // 
-            // textBoxSmtpUsername
-            // 
-            this.textBoxSmtpUsername.Location = new System.Drawing.Point(91, 76);
-            this.textBoxSmtpUsername.Name = "textBoxSmtpUsername";
-            this.textBoxSmtpUsername.Size = new System.Drawing.Size(287, 20);
-            this.textBoxSmtpUsername.TabIndex = 8;
-            // 
-            // textBoxSmtpPassword
-            // 
-            this.textBoxSmtpPassword.Location = new System.Drawing.Point(91, 109);
-            this.textBoxSmtpPassword.Name = "textBoxSmtpPassword";
-            this.textBoxSmtpPassword.Size = new System.Drawing.Size(287, 20);
-            this.textBoxSmtpPassword.TabIndex = 9;
-            this.textBoxSmtpPassword.UseSystemPasswordChar = true;
-            // 
-            // BtnSmtpApply
-            // 
-            this.BtnSmtpApply.Location = new System.Drawing.Point(399, 192);
-            this.BtnSmtpApply.Name = "BtnSmtpApply";
-            this.BtnSmtpApply.Size = new System.Drawing.Size(75, 23);
-            this.BtnSmtpApply.TabIndex = 10;
-            this.BtnSmtpApply.Text = "Apply";
-            this.BtnSmtpApply.UseVisualStyleBackColor = true;
-            this.BtnSmtpApply.Click += new System.EventHandler(this.BtnSmtpApply_Click);
+            this.button1.Location = new System.Drawing.Point(399, 192);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Apply";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBoxPop3Password
             // 
@@ -290,15 +307,32 @@
             this.LblPop3Address.TabIndex = 10;
             this.LblPop3Address.Text = "Server Address";
             // 
-            // button1
+            // LblAES
             // 
-            this.button1.Location = new System.Drawing.Point(399, 192);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Apply";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.LblAES.AutoSize = true;
+            this.LblAES.Location = new System.Drawing.Point(6, 13);
+            this.LblAES.Margin = new System.Windows.Forms.Padding(3, 10, 3, 10);
+            this.LblAES.Name = "LblAES";
+            this.LblAES.Size = new System.Drawing.Size(49, 13);
+            this.LblAES.TabIndex = 0;
+            this.LblAES.Text = "AES Key";
+            // 
+            // textBoxAESKey
+            // 
+            this.textBoxAESKey.Location = new System.Drawing.Point(61, 10);
+            this.textBoxAESKey.Name = "textBoxAESKey";
+            this.textBoxAESKey.Size = new System.Drawing.Size(362, 20);
+            this.textBoxAESKey.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(399, 192);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Apply";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // EmailConfiguration
             // 
@@ -309,6 +343,8 @@
             this.Name = "EmailConfiguration";
             this.Text = "EmailConfiguration";
             this.TabGeneral.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPage3.ResumeLayout(false);
@@ -343,5 +379,8 @@
         private System.Windows.Forms.Label LblPop3Username;
         private System.Windows.Forms.Label LblPop3Port;
         private System.Windows.Forms.Label LblPop3Address;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxAESKey;
+        private System.Windows.Forms.Label LblAES;
     }
 }

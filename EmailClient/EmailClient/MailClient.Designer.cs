@@ -1,6 +1,6 @@
 ﻿namespace EmailClient
 {
-    partial class Form1
+    partial class MailClient
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailClient));
             this.newMail_btn = new System.Windows.Forms.Button();
             this.inbox_btn = new System.Windows.Forms.Button();
             this.sendReceive_btn = new System.Windows.Forms.Button();
