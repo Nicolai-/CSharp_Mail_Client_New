@@ -99,6 +99,7 @@
     <Compile Include="EmailConfiguration.Designer.cs">
       <DependentUpon>EmailConfiguration.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmailValidator.cs" />
     <Compile Include="MailClient.cs">
       <SubType>Form</SubType>
     </Compile>

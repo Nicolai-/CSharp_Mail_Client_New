@@ -34,6 +34,7 @@
             this.sendReceive_btn = new System.Windows.Forms.Button();
             this.inboxDataGridView = new System.Windows.Forms.DataGridView();
             this.Mail_Groupbox = new System.Windows.Forms.GroupBox();
+            this.checkBoxEncrypt = new System.Windows.Forms.CheckBox();
             this.Send_Button = new System.Windows.Forms.Button();
             this.Message_Label = new System.Windows.Forms.Label();
             this.Subject_Label = new System.Windows.Forms.Label();
@@ -51,7 +52,7 @@
             this.danishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danishToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.emailConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.checkBoxEncrypt = new System.Windows.Forms.CheckBox();
+            this.LblEmailInvalid = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).BeginInit();
             this.Mail_Groupbox.SuspendLayout();
             this.StatusStrip.SuspendLayout();
@@ -100,6 +101,7 @@
             // 
             // Mail_Groupbox
             // 
+            this.Mail_Groupbox.Controls.Add(this.LblEmailInvalid);
             this.Mail_Groupbox.Controls.Add(this.checkBoxEncrypt);
             this.Mail_Groupbox.Controls.Add(this.Send_Button);
             this.Mail_Groupbox.Controls.Add(this.Message_Label);
@@ -111,6 +113,12 @@
             resources.ApplyResources(this.Mail_Groupbox, "Mail_Groupbox");
             this.Mail_Groupbox.Name = "Mail_Groupbox";
             this.Mail_Groupbox.TabStop = false;
+            // 
+            // checkBoxEncrypt
+            // 
+            resources.ApplyResources(this.checkBoxEncrypt, "checkBoxEncrypt");
+            this.checkBoxEncrypt.Name = "checkBoxEncrypt";
+            this.checkBoxEncrypt.UseVisualStyleBackColor = true;
             // 
             // Send_Button
             // 
@@ -151,6 +159,7 @@
             resources.ApplyResources(this.To_textbox, "To_textbox");
             this.To_textbox.Name = "To_textbox";
             this.To_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ClearStatus);
+            this.To_textbox.Leave += new System.EventHandler(this.To_textbox_Leave);
             // 
             // StatusStrip
             // 
@@ -216,13 +225,13 @@
             resources.ApplyResources(this.emailConfigurationToolStripMenuItem, "emailConfigurationToolStripMenuItem");
             this.emailConfigurationToolStripMenuItem.Click += new System.EventHandler(this.emailConfigurationToolStripMenuItem_Click);
             // 
-            // checkBoxEncrypt
+            // LblEmailInvalid
             // 
-            resources.ApplyResources(this.checkBoxEncrypt, "checkBoxEncrypt");
-            this.checkBoxEncrypt.Name = "checkBoxEncrypt";
-            this.checkBoxEncrypt.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.LblEmailInvalid, "LblEmailInvalid");
+            this.LblEmailInvalid.ForeColor = System.Drawing.Color.Red;
+            this.LblEmailInvalid.Name = "LblEmailInvalid";
             // 
-            // Form1
+            // MailClient
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -234,7 +243,7 @@
             this.Controls.Add(this.inbox_btn);
             this.Controls.Add(this.newMail_btn);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "MailClient";
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).EndInit();
             this.Mail_Groupbox.ResumeLayout(false);
             this.Mail_Groupbox.PerformLayout();
@@ -272,6 +281,7 @@
         private System.Windows.Forms.ToolStripMenuItem danishToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem emailConfigurationToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBoxEncrypt;
+        private System.Windows.Forms.Label LblEmailInvalid;
     }
 }
 

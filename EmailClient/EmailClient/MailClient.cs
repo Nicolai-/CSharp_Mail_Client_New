@@ -177,6 +177,14 @@ namespace EmailClient
             ConfigWindow = new EmailConfiguration();
             ConfigWindow.Show();
         }
+
+        private void To_textbox_Leave(object sender, EventArgs e)
+        {
+            bool isValid = EMailValidator.EmailIsValid(this.To_textbox.Text);
+            Debug.WriteLine("Valid: " + isValid);
+            if (!isValid)
+                this.LblEmailInvalid.Text = "*) Invalid Email Address";
+        }
  
 
     }
