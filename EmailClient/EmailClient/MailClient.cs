@@ -150,6 +150,7 @@ namespace EmailClient
 
             if (!sendWorker.IsBusy)
             {
+                StripStatusLabel.Text = "Sending Email...";
                 sendWorker.RunWorkerAsync(arguments);
             }
         }
@@ -159,7 +160,7 @@ namespace EmailClient
             bool flag = Convert.ToBoolean(e.Result);
             if (flag == true)
             {
-                StripStatusLabel.Text = "Sucess ! 1 Email send from the nr 1 email client";
+                StripStatusLabel.Text = "Sucess ! Email Sent...";
                 To_textbox.Text = string.Empty;
                 Subject_textbox.Text = string.Empty;
                 Message_textbox.Text = string.Empty;
