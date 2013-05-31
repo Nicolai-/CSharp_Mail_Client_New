@@ -65,6 +65,7 @@ namespace EmailClient
             table.Columns.Add("Mail-ID", typeof(int));
             table.Columns.Add("From", typeof(string));
             table.Columns.Add("Subject", typeof(string));
+            table.Columns.Add("Date", typeof(string));
             inboxDataGridView.DataSource = table;
             inboxDataGridView.RowHeadersVisible = false;
             inboxDataGridView.Columns["Mail-ID"].Visible = false;
@@ -88,6 +89,7 @@ namespace EmailClient
             {
                 //dbHandler = new DBHandler();
                 inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
+                //inboxDataGridView.sort
             }
         }
 
@@ -179,8 +181,12 @@ namespace EmailClient
         {
             bool isValid = EMailValidator.EmailIsValid(this.To_textbox.Text);
             Debug.WriteLine("Valid: " + isValid);
-            if (!isValid)
+            if (!isValid && (this.To_textbox.Text != string.Empty))
                 this.LblEmailInvalid.Text = "*) Invalid Email Address";
+            else
+            {
+                this.LblEmailInvalid.Text = string.Empty;
+            }
         }
  
 

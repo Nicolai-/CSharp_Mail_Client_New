@@ -26,6 +26,7 @@ namespace EmailClient
                 "cc NVARCHAR(100), " +
                 "subject NVARCHAR(500), " +
                 "message NVARCHAR(500), " +
+                "datetime text," +
                 "attachment blob);";
             Debug.WriteLine(sql);
            
@@ -48,8 +49,8 @@ namespace EmailClient
         public void InsertMail(Message mail)
         {
             Debug.WriteLine("Insert mail to DB");
-            string sql = "INSERT INTO mailInbox (sender,recipient,bc,cc,subject,message) " +
-                "VALUES (@sender,@recipient,@bc,@cc,@subject,@message)";
+            string sql = "INSERT INTO mailInbox (sender,recipient,bc,cc,subject,message,datetime) " +
+                "VALUES (@sender,@recipient,@bc,@cc,@subject,@message,@datetime)";
 
             string message;
             string sender = mail.Headers.From.ToString();
@@ -57,6 +58,8 @@ namespace EmailClient
             string bc = String.Join(",", mail.Headers.Bcc);
             string cc = String.Join(",", mail.Headers.Cc);
             string subject =  mail.Headers.Subject;
+            DateTime datetime = mail.Headers.DateSent;
+            Debug.WriteLine(datetime);
             if (!mail.MessagePart.IsMultiPart)
             {
                 message = mail.MessagePart.GetBodyAsText();
@@ -83,6 +86,7 @@ namespace EmailClient
             cmd.Parameters.AddWithValue("@cc", cc);
             cmd.Parameters.AddWithValue("@subject", subject);
             cmd.Parameters.AddWithValue("@message", message);
+            cmd.Parameters.AddWithValue("@datetime", datetime);
             //cmd.Parameters.AddWithValue("@attachment", mail.MessagePart.FileName);
             cmd.ExecuteNonQuery();
         }
@@ -93,9 +97,8 @@ namespace EmailClient
             SenderSubject.Columns.Add("Mail-ID",typeof(int));
             SenderSubject.Columns.Add("From", typeof(string));
             SenderSubject.Columns.Add("Subject", typeof(string));
-
-
-            string sql = "SELECT mailid,sender,subject from mailInbox";
+            SenderSubject.Columns.Add("Date", typeof(DateTime));
+            string sql = "SELECT mailid,sender,subject,datetime from mailInbox ORDER BY datetime DESC";
             SQLiteCommand cmd = new SQLiteCommand(sql, DbConn);
             SQLiteDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
@@ -104,6 +107,7 @@ namespace EmailClient
                 SenderSubject.Rows[SenderSubject.Rows.Count - 1]["Mail-ID"] = reader.GetInt32(0);  // Mail-ID
                 SenderSubject.Rows[SenderSubject.Rows.Count - 1]["From"] = reader.GetString(1);    // Sender
                 SenderSubject.Rows[SenderSubject.Rows.Count - 1]["Subject"] = reader.GetString(2); // Subject
+                SenderSubject.Rows[SenderSubject.Rows.Count - 1]["Date"] = reader.GetDateTime(3); // Datetime
             }
             return SenderSubject;
         }
