@@ -52,7 +52,6 @@ namespace EmailClient
         void MailClient_Load(object sender, EventArgs e)
         {
             /* Set the window text */
-            this.Text = "Super Mail Klient by Mathias & Nicolai";
         }
         
         /* Events to execute when the "indbox" button is clicked */
@@ -231,6 +230,11 @@ namespace EmailClient
         private void danishToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RuntimeLocalizer.ChangeCulture(this, "en-US");
+        }
+
+        private void MailClient_Load(object sender, EventArgs e)
+        {
+
         }
 
     }

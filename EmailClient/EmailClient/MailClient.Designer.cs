@@ -82,7 +82,6 @@
             // 
             // inboxDataGridView
             // 
-            resources.ApplyResources(this.inboxDataGridView, "inboxDataGridView");
             this.inboxDataGridView.AllowUserToAddRows = false;
             this.inboxDataGridView.AllowUserToDeleteRows = false;
             this.inboxDataGridView.AllowUserToOrderColumns = true;
@@ -93,6 +92,7 @@
             this.inboxDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.inboxDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.inboxDataGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            resources.ApplyResources(this.inboxDataGridView, "inboxDataGridView");
             this.inboxDataGridView.MultiSelect = false;
             this.inboxDataGridView.Name = "inboxDataGridView";
             this.inboxDataGridView.ReadOnly = true;
@@ -101,7 +101,6 @@
             // 
             // Mail_Groupbox
             // 
-            resources.ApplyResources(this.Mail_Groupbox, "Mail_Groupbox");
             this.Mail_Groupbox.Controls.Add(this.LblEmailInvalid);
             this.Mail_Groupbox.Controls.Add(this.checkBoxEncrypt);
             this.Mail_Groupbox.Controls.Add(this.Send_Button);
@@ -111,6 +110,7 @@
             this.Mail_Groupbox.Controls.Add(this.Subject_textbox);
             this.Mail_Groupbox.Controls.Add(this.Message_textbox);
             this.Mail_Groupbox.Controls.Add(this.To_textbox);
+            resources.ApplyResources(this.Mail_Groupbox, "Mail_Groupbox");
             this.Mail_Groupbox.Name = "Mail_Groupbox";
             this.Mail_Groupbox.TabStop = false;
             // 
@@ -169,28 +169,28 @@
             // 
             // StatusStrip
             // 
-            resources.ApplyResources(this.StatusStrip, "StatusStrip");
             this.StatusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripProgressBar1,
             this.StripProgressBar,
             this.StripStatusLabel});
+            resources.ApplyResources(this.StatusStrip, "StatusStrip");
             this.StatusStrip.Name = "StatusStrip";
             // 
             // toolStripProgressBar1
             // 
-            resources.ApplyResources(this.toolStripProgressBar1, "toolStripProgressBar1");
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            resources.ApplyResources(this.toolStripProgressBar1, "toolStripProgressBar1");
             // 
             // StripProgressBar
             // 
-            resources.ApplyResources(this.StripProgressBar, "StripProgressBar");
             this.StripProgressBar.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.StripProgressBar.Name = "StripProgressBar";
+            resources.ApplyResources(this.StripProgressBar, "StripProgressBar");
             // 
             // StripStatusLabel
             // 
-            resources.ApplyResources(this.StripStatusLabel, "StripStatusLabel");
             this.StripStatusLabel.Name = "StripStatusLabel";
+            resources.ApplyResources(this.StripStatusLabel, "StripStatusLabel");
             // 
             // menuStrip1
             // 
@@ -201,36 +201,36 @@
             // 
             // toolStripMenuItem1
             // 
-            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.languageToolStripMenuItem,
             this.emailConfigurationToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            resources.ApplyResources(this.toolStripMenuItem1, "toolStripMenuItem1");
             // 
             // languageToolStripMenuItem
             // 
-            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.danishToolStripMenuItem,
             this.danishToolStripMenuItem1});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             // 
             // danishToolStripMenuItem
             // 
-            resources.ApplyResources(this.danishToolStripMenuItem, "danishToolStripMenuItem");
             this.danishToolStripMenuItem.Name = "danishToolStripMenuItem";
+            resources.ApplyResources(this.danishToolStripMenuItem, "danishToolStripMenuItem");
             this.danishToolStripMenuItem.Click += new System.EventHandler(this.danishToolStripMenuItem_Click);
             // 
             // danishToolStripMenuItem1
             // 
-            resources.ApplyResources(this.danishToolStripMenuItem1, "danishToolStripMenuItem1");
             this.danishToolStripMenuItem1.Name = "danishToolStripMenuItem1";
+            resources.ApplyResources(this.danishToolStripMenuItem1, "danishToolStripMenuItem1");
             this.danishToolStripMenuItem1.Click += new System.EventHandler(this.danishToolStripMenuItem1_Click);
             // 
             // emailConfigurationToolStripMenuItem
             // 
-            resources.ApplyResources(this.emailConfigurationToolStripMenuItem, "emailConfigurationToolStripMenuItem");
             this.emailConfigurationToolStripMenuItem.Name = "emailConfigurationToolStripMenuItem";
+            resources.ApplyResources(this.emailConfigurationToolStripMenuItem, "emailConfigurationToolStripMenuItem");
             this.emailConfigurationToolStripMenuItem.Click += new System.EventHandler(this.emailConfigurationToolStripMenuItem_Click);
             // 
             // MailClient
@@ -246,6 +246,7 @@
             this.Controls.Add(this.newMail_btn);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MailClient";
+            this.Load += new System.EventHandler(this.MailClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).EndInit();
             this.Mail_Groupbox.ResumeLayout(false);
             this.Mail_Groupbox.PerformLayout();

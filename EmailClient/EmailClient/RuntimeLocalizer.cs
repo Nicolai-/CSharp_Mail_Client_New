@@ -7,6 +7,7 @@ using System.Globalization;
 using System.Windows.Forms;
 using System.ComponentModel;
 using System.Threading;
+using System.Diagnostics;
 
 namespace EmailClient
 {
@@ -15,6 +16,7 @@ namespace EmailClient
         public static void ChangeCulture(Form frm, string cultureCode)
         {
             CultureInfo culture = CultureInfo.GetCultureInfo(cultureCode);
+            Debug.WriteLine(culture.ToString());
 
             Thread.CurrentThread.CurrentUICulture = culture;
 
