@@ -232,10 +232,6 @@ namespace EmailClient
             RuntimeLocalizer.ChangeCulture(this, "en-US");
         }
 
-        private void MailClient_Load(object sender, EventArgs e)
-        {
-
-        }
 
     }
 }
