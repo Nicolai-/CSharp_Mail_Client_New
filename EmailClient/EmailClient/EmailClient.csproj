@@ -127,6 +127,9 @@
     <EmbeddedResource Include="MailClient.da.resx">
       <DependentUpon>MailClient.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MailClient.en.resx">
+      <DependentUpon>MailClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MailClient.resx">
       <DependentUpon>MailClient.cs</DependentUpon>
     </EmbeddedResource>
