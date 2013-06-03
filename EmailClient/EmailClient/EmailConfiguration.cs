@@ -81,5 +81,6 @@ namespace EmailClient
             Setting.Default.aes_key = this.textBoxAESKey.Text;
             Setting.Default.sender_name = this.textBoxSenderName.Text;
         }
+
     }
 }

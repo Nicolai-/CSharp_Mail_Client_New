@@ -117,19 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;LblAES.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="checkBoxPop3SSL.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="labelSenderName.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
   <data name="checkBoxPop3SSL.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LblPop3Address.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 13</value>
   </data>
   <data name="tabPage3.Text" xml:space="preserve">
     <value>POP3</value>
@@ -140,17 +137,14 @@
   <data name="&gt;&gt;LblPop3Password.Name" xml:space="preserve">
     <value>LblPop3Password</value>
   </data>
-  <data name="textBoxSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 46</value>
+  <data name="checkBoxPop3SSL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 17</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
   </data>
   <data name="&gt;&gt;textBoxAESKey.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="textBoxAESKey.Size" type="System.Drawing.Size, System.Drawing">
-    <value>362, 20</value>
   </data>
   <data name="textBoxSmtpPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 109</value>
@@ -161,8 +155,12 @@
   <data name="&gt;&gt;LblSmtpUsername.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Apply</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="LblPop3Password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 10, 3, 10</value>
+  </data>
+  <data name="&gt;&gt;LblPop3Address.Name" xml:space="preserve">
+    <value>LblPop3Address</value>
   </data>
   <data name="&gt;&gt;textBoxSmtpPort.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -188,10 +186,6 @@
   <data name="&gt;&gt;LblSmtpPort.Name" xml:space="preserve">
     <value>LblSmtpPort</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LblPop3Password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 10, 3, 10</value>
-  </data>
   <data name="&gt;&gt;LblPop3Address.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
@@ -201,20 +195,14 @@
   <data name="&gt;&gt;LblSmtpPort.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="LblPop3Username.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
   <data name="LblPop3Username.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 10</value>
   </data>
   <data name="&gt;&gt;checkBoxPop3SSL.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="&gt;&gt;LblPop3Username.Name" xml:space="preserve">
-    <value>LblPop3Username</value>
+  <data name="LblPop3Address.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
   </data>
   <data name="&gt;&gt;LblSmtpPassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -243,8 +231,8 @@
   <data name="LblSmtpAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>79, 13</value>
   </data>
-  <data name="labelSenderName.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+  <data name="button1.Text" xml:space="preserve">
+    <value>Apply</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>399, 192</value>
@@ -252,29 +240,20 @@
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>481, 222</value>
-  </data>
   <data name="LblPop3Address.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="textBoxSmtpUsername.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;BtnSmtpApply.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CheckBoxSmtpSSL.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBoxPop3Port.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 46</value>
   </data>
   <data name="LblSmtpAddress.Text" xml:space="preserve">
     <value>Server Address</value>
   </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="LblPop3Port.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="LblPop3Port.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -282,8 +261,11 @@
   <data name="CheckBoxSmtpSSL.Text" xml:space="preserve">
     <value>SSL</value>
   </data>
-  <data name="textBoxSmtpAddress.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>481, 222</value>
   </data>
   <data name="&gt;&gt;labelSenderName.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -327,17 +309,17 @@
   <data name="LblPop3Address.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 13</value>
   </data>
-  <data name="LblPop3Port.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="LblPop3Address.Text" xml:space="preserve">
     <value>Server Address</value>
   </data>
   <data name="LblSmtpAddress.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;LblSmtpUsername.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;BtnSmtpApply.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;LblAES.Parent" xml:space="preserve">
+    <value>tabPage1</value>
   </data>
   <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
@@ -348,11 +330,8 @@
   <data name="labelSenderName.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 10</value>
   </data>
-  <data name="checkBoxPop3SSL.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopRight</value>
-  </data>
-  <data name="textBoxPop3Port.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 20</value>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
   <data name="&gt;&gt;checkBoxPop3SSL.Name" xml:space="preserve">
     <value>checkBoxPop3SSL</value>
@@ -363,29 +342,26 @@
   <data name="LblPop3Username.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 79</value>
   </data>
-  <data name="&gt;&gt;textBoxPop3Port.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="&gt;&gt;LblSmtpPort.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="LblSmtpPort.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 10</value>
   </data>
-  <data name="LblSmtpUsername.Text" xml:space="preserve">
-    <value>Username</value>
+  <data name="&gt;&gt;LblPop3Username.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
-  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>399, 192</value>
-  </data>
-  <data name="checkBoxPop3SSL.Text" xml:space="preserve">
-    <value>SSL</value>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="LblAES.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
   </data>
   <data name="LblPop3Address.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
     <value>tabPage3</value>
@@ -414,11 +390,8 @@
   <data name="&gt;&gt;textBoxSmtpPassword.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>SMTP</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="LblPop3Username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
   </data>
   <data name="textBoxSmtpAddress.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 13</value>
@@ -447,6 +420,9 @@
   <data name="LblPop3Password.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
+  <data name="&gt;&gt;button1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;textBoxAESKey.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -455,9 +431,6 @@
   </data>
   <data name="LblSmtpPort.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;textBoxSmtpPort.Name" xml:space="preserve">
-    <value>textBoxSmtpPort</value>
   </data>
   <data name="&gt;&gt;LblSmtpAddress.Name" xml:space="preserve">
     <value>LblSmtpAddress</value>
@@ -471,8 +444,8 @@
   <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
     <value>TabGeneral</value>
   </data>
-  <data name="&gt;&gt;TabGeneral.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LblPop3Username.Name" xml:space="preserve">
+    <value>LblPop3Username</value>
   </data>
   <data name="&gt;&gt;button2.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -483,17 +456,20 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Email Configuration</value>
   </data>
-  <data name="&gt;&gt;LblAES.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="TabGeneral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 12</value>
   </data>
-  <data name="&gt;&gt;LblPop3Username.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;textBoxPop3Port.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="textBoxSmtpAddress.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="LblPop3Username.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="LblSmtpPort.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="textBoxPop3Username.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;LblPop3Port.Parent" xml:space="preserve">
     <value>tabPage3</value>
@@ -516,14 +492,14 @@
   <data name="CheckBoxSmtpSSL.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
   </data>
-  <data name="textBoxPop3Username.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="&gt;&gt;checkBoxPop3SSL.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="labelSenderName.Text" xml:space="preserve">
     <value>Senders Name</value>
   </data>
-  <data name="button1.Text" xml:space="preserve">
-    <value>Apply</value>
+  <data name="textBoxPop3Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 20</value>
   </data>
   <data name="textBoxSmtpUsername.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 76</value>
@@ -533,6 +509,9 @@
   </data>
   <data name="LblSmtpPassword.Text" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="&gt;&gt;TabGeneral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;textBoxPop3Address.Name" xml:space="preserve">
     <value>textBoxPop3Address</value>
@@ -552,11 +531,8 @@
   <data name="LblPop3Password.Text" xml:space="preserve">
     <value>Password</value>
   </data>
-  <data name="checkBoxPop3SSL.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 17</value>
-  </data>
-  <data name="&gt;&gt;labelSenderName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>SMTP</value>
   </data>
   <data name="LblPop3Username.Text" xml:space="preserve">
     <value>Username</value>
@@ -564,11 +540,14 @@
   <data name="&gt;&gt;textBoxPop3Address.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="button2.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
   <data name="LblPop3Port.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 13</value>
   </data>
-  <data name="&gt;&gt;textBoxSmtpUsername.Name" xml:space="preserve">
-    <value>textBoxSmtpUsername</value>
+  <data name="&gt;&gt;textBoxSmtpPort.Name" xml:space="preserve">
+    <value>textBoxSmtpPort</value>
   </data>
   <data name="labelSenderName.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 46</value>
@@ -576,8 +555,8 @@
   <data name="textBoxSmtpAddress.Size" type="System.Drawing.Size, System.Drawing">
     <value>287, 20</value>
   </data>
-  <data name="LblSmtpAddress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 10, 3, 10</value>
+  <data name="textBoxPop3Port.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 20</value>
   </data>
   <data name="&gt;&gt;LblPop3Port.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -585,20 +564,14 @@
   <data name="checkBoxPop3SSL.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 3</value>
   </data>
-  <data name="&gt;&gt;textBoxSmtpUsername.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="LblSmtpPort.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
   <data name="checkBoxPop3SSL.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 145</value>
-  </data>
-  <data name="textBoxPop3Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>287, 20</value>
-  </data>
-  <data name="&gt;&gt;LblPop3Username.Parent" xml:space="preserve">
-    <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;textBoxSenderName.Parent" xml:space="preserve">
     <value>tabPage1</value>
@@ -624,11 +597,11 @@
   <data name="&gt;&gt;LblSmtpUsername.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="textBoxPop3Address.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
   <data name="&gt;&gt;LblAES.Name" xml:space="preserve">
     <value>LblAES</value>
-  </data>
-  <data name="LblPop3Username.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -642,8 +615,8 @@
   <data name="&gt;&gt;textBoxPop3Address.Parent" xml:space="preserve">
     <value>tabPage3</value>
   </data>
-  <data name="&gt;&gt;LblSmtpPort.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="textBoxPop3Address.Location" type="System.Drawing.Point, System.Drawing">
     <value>91, 13</value>
@@ -693,6 +666,9 @@
   <data name="checkBoxPop3SSL.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
+  <data name="textBoxSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 46</value>
+  </data>
   <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
@@ -705,8 +681,8 @@
   <data name="&gt;&gt;button1.Name" xml:space="preserve">
     <value>button1</value>
   </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="textBoxSmtpUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -729,14 +705,14 @@
   <data name="LblAES.Text" xml:space="preserve">
     <value>AES Key</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Generelt</value>
+  <data name="textBoxAESKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 20</value>
   </data>
   <data name="&gt;&gt;LblPop3Port.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="LblSmtpAddress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 13</value>
+  <data name="checkBoxPop3SSL.Text" xml:space="preserve">
+    <value>SSL</value>
   </data>
   <data name="LblPop3Password.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 112</value>
@@ -750,8 +726,8 @@
   <data name="LblSmtpPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 46</value>
   </data>
-  <data name="&gt;&gt;textBoxPop3Port.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;LblPop3Username.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -771,14 +747,14 @@
   <data name="LblPop3Password.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
   <data name="CheckBoxSmtpSSL.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 17</value>
   </data>
   <data name="&gt;&gt;button2.Name" xml:space="preserve">
     <value>button2</value>
+  </data>
+  <data name="&gt;&gt;textBoxPop3Port.Parent" xml:space="preserve">
+    <value>tabPage3</value>
   </data>
   <data name="&gt;&gt;textBoxPop3Port.Name" xml:space="preserve">
     <value>textBoxPop3Port</value>
@@ -789,11 +765,11 @@
   <data name="LblPop3Port.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 10</value>
   </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="LblSmtpUsername.Text" xml:space="preserve">
+    <value>Username</value>
   </data>
-  <data name="LblPop3Port.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 46</value>
+  <data name="&gt;&gt;textBoxSmtpUsername.Parent" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
   <data name="LblSmtpUsername.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 10</value>
@@ -801,8 +777,14 @@
   <data name="LblSmtpPassword.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 10, 3, 10</value>
   </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>Generelt</value>
+  </data>
   <data name="&gt;&gt;LblSmtpAddress.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="textBoxSmtpPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>493, 261</value>
@@ -816,6 +798,9 @@
   <data name="&gt;&gt;TabGeneral.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="CheckBoxSmtpSSL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;LblSmtpPassword.Name" xml:space="preserve">
     <value>LblSmtpPassword</value>
   </data>
@@ -825,8 +810,8 @@
   <data name="&gt;&gt;textBoxPop3Password.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;LblPop3Address.Name" xml:space="preserve">
-    <value>LblPop3Address</value>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>399, 192</value>
   </data>
   <data name="&gt;&gt;TabGeneral.Parent" xml:space="preserve">
     <value>$this</value>
@@ -834,8 +819,8 @@
   <data name="TabGeneral.Size" type="System.Drawing.Size, System.Drawing">
     <value>489, 248</value>
   </data>
-  <data name="TabGeneral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 12</value>
+  <data name="&gt;&gt;LblSmtpPort.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;button2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -843,11 +828,14 @@
   <data name="labelSenderName.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBoxSmtpPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;LblSmtpUsername.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="LblSmtpUsername.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="LblSmtpAddress.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 10, 3, 10</value>
+  </data>
+  <data name="&gt;&gt;labelSenderName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BtnSmtpApply.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -855,14 +843,14 @@
   <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;checkBoxPop3SSL.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
   <data name="LblSmtpUsername.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="textBoxPop3Port.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 46</value>
+  <data name="LblPop3Port.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 46</value>
   </data>
   <data name="&gt;&gt;labelSenderName.Name" xml:space="preserve">
     <value>labelSenderName</value>
@@ -879,8 +867,20 @@
   <data name="&gt;&gt;LblPop3Address.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="textBoxPop3Address.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="LblPop3Username.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="LblSmtpUsername.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="LblSmtpAddress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;textBoxSmtpUsername.Name" xml:space="preserve">
+    <value>textBoxSmtpUsername</value>
+  </data>
+  <data name="&gt;&gt;LblAES.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>

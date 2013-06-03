@@ -232,6 +232,5 @@ namespace EmailClient
             RuntimeLocalizer.ChangeCulture(this, "en-US");
         }
 
-
     }
 }
