@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MailClient));
             this.newMail_btn = new System.Windows.Forms.Button();
             this.inbox_btn = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.danishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.danishToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.emailConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.inboxDataGridView)).BeginInit();
             this.Mail_Groupbox.SuspendLayout();
             this.StatusStrip.SuspendLayout();
@@ -63,6 +65,7 @@
             // 
             resources.ApplyResources(this.newMail_btn, "newMail_btn");
             this.newMail_btn.Name = "newMail_btn";
+            this.toolTip.SetToolTip(this.newMail_btn, resources.GetString("newMail_btn.ToolTip"));
             this.newMail_btn.UseVisualStyleBackColor = true;
             this.newMail_btn.Click += new System.EventHandler(this.newMail_btn_Click);
             // 
@@ -70,6 +73,7 @@
             // 
             resources.ApplyResources(this.inbox_btn, "inbox_btn");
             this.inbox_btn.Name = "inbox_btn";
+            this.toolTip.SetToolTip(this.inbox_btn, resources.GetString("inbox_btn.ToolTip"));
             this.inbox_btn.UseVisualStyleBackColor = true;
             this.inbox_btn.Click += new System.EventHandler(this.inbox_btn_Click);
             // 
@@ -77,6 +81,7 @@
             // 
             resources.ApplyResources(this.sendReceive_btn, "sendReceive_btn");
             this.sendReceive_btn.Name = "sendReceive_btn";
+            this.toolTip.SetToolTip(this.sendReceive_btn, resources.GetString("sendReceive_btn.ToolTip"));
             this.sendReceive_btn.UseVisualStyleBackColor = true;
             this.sendReceive_btn.Click += new System.EventHandler(this.Retrieve_btn_Click);
             // 
@@ -130,6 +135,7 @@
             // 
             resources.ApplyResources(this.Send_Button, "Send_Button");
             this.Send_Button.Name = "Send_Button";
+            this.toolTip.SetToolTip(this.Send_Button, resources.GetString("Send_Button.ToolTip"));
             this.Send_Button.UseVisualStyleBackColor = true;
             this.Send_Button.Click += new System.EventHandler(this.Send_Button_Click);
             // 
@@ -158,6 +164,7 @@
             // 
             resources.ApplyResources(this.Message_textbox, "Message_textbox");
             this.Message_textbox.Name = "Message_textbox";
+            this.toolTip.SetToolTip(this.Message_textbox, resources.GetString("Message_textbox.ToolTip"));
             this.Message_textbox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ClearStatus);
             // 
             // To_textbox
@@ -233,6 +240,10 @@
             resources.ApplyResources(this.emailConfigurationToolStripMenuItem, "emailConfigurationToolStripMenuItem");
             this.emailConfigurationToolStripMenuItem.Click += new System.EventHandler(this.emailConfigurationToolStripMenuItem_Click);
             // 
+            // toolTip
+            // 
+            this.toolTip.Popup += new System.Windows.Forms.PopupEventHandler(this.toolTip_Popup);
+            // 
             // MailClient
             // 
             resources.ApplyResources(this, "$this");
@@ -285,6 +296,7 @@
         private System.Windows.Forms.ToolStripMenuItem emailConfigurationToolStripMenuItem;
         private System.Windows.Forms.CheckBox checkBoxEncrypt;
         private System.Windows.Forms.Label LblEmailInvalid;
+        private System.Windows.Forms.ToolTip toolTip;
     }
 }
 

@@ -232,5 +232,10 @@ namespace EmailClient
             RuntimeLocalizer.ChangeCulture(this, "en-US");
         }
 
+        private void toolTip_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
+
     }
 }
