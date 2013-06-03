@@ -91,6 +91,7 @@ namespace EmailClient
 
             /* Reset the progressbar to 0 */
             StripProgressBar.Value = 0;
+            StripStatusLabel.Text = string.Empty;
 
             /* insert data into the datagridview */
             inboxDataGridView.DataSource = dbHandler.GetAllSendersSubjects();
@@ -101,6 +102,7 @@ namespace EmailClient
         {
             /* sets the progressbar to the result from ProgressPercentage */
             StripProgressBar.Value = e.ProgressPercentage;
+            StripStatusLabel.Text = Convert.ToString(e.ProgressPercentage) + " %";
         }
 
         /* Events to execute when the "retrive" button is clicked */
