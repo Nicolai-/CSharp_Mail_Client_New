@@ -117,62 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="newMail_btn.Text" xml:space="preserve">
-    <value>Ny Mail</value>
-  </data>
-  <data name="inbox_btn.Text" xml:space="preserve">
-    <value>Indbakke</value>
-  </data>
-  <data name="sendReceive_btn.Text" xml:space="preserve">
-    <value>Modtag Mails</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="checkBoxEncrypt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 20</value>
+  <data name="labelSenderName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
   </data>
-  <data name="checkBoxEncrypt.Text" xml:space="preserve">
-    <value>Send email krypteret</value>
+  <data name="labelSenderName.Text" xml:space="preserve">
+    <value>Afsenders Navn</value>
   </data>
-  <data name="Message_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
+  <data name="LblAES.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
   </data>
-  <data name="Message_Label.Text" xml:space="preserve">
-    <value>Besked :</value>
+  <data name="LblAES.Text" xml:space="preserve">
+    <value>AES Nøgle</value>
   </data>
-  <data name="Subject_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
+  <data name="LblSmtpPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
   </data>
-  <data name="Subject_Label.Text" xml:space="preserve">
-    <value>Emne :</value>
+  <data name="LblSmtpPassword.Text" xml:space="preserve">
+    <value>Adgangskode</value>
   </data>
-  <data name="To_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 20</value>
+  <data name="LblSmtpUsername.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
   </data>
-  <data name="To_Label.Text" xml:space="preserve">
-    <value>Til :</value>
+  <data name="LblSmtpUsername.Text" xml:space="preserve">
+    <value>Brugernavn</value>
   </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+  <data name="LblSmtpAddress.Text" xml:space="preserve">
+    <value>Server Adresse</value>
   </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sprog</value>
+  <data name="LblPop3Password.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
   </data>
-  <data name="emailConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 22</value>
+  <data name="LblPop3Password.Text" xml:space="preserve">
+    <value>Adgangskode</value>
   </data>
-  <data name="emailConfigurationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Email Konfiguration</value>
+  <data name="LblPop3Username.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
   </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>81, 20</value>
+  <data name="LblPop3Username.Text" xml:space="preserve">
+    <value>Brugernavn</value>
   </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>Indstillinger</value>
-  </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 24</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Super Mail Klient Af Nicolai &amp; Mathias - 2013 - Mercantec</value>
+  <data name="LblPop3Address.Text" xml:space="preserve">
+    <value>Server Adresse</value>
   </data>
 </root>

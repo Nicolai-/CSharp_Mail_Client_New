@@ -117,6 +117,296 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;SubjectLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>760, 614</value>
+  </data>
+  <data name="&gt;&gt;ToLblText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SubjectLbl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="BtnDecrypt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>661, 48</value>
+  </data>
+  <data name="&gt;&gt;Print_button.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LblAESKey.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SubjectLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnDecrypt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SubjectLblText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SubjectLblText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="SubjectLblText.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="LblAESKey.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="ToLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LblAESKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ShowMailTextBox.Name" xml:space="preserve">
+    <value>ShowMailTextBox</value>
+  </data>
+  <data name="FromLblText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FromLblText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 48</value>
+  </data>
+  <data name="&gt;&gt;FromLblText.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="Print_button.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="SubjectLblText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 80</value>
+  </data>
+  <data name="FromLblText.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="textBoxAESKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>205, 20</value>
+  </data>
+  <data name="ToLblText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 19</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="Print_button.Text" xml:space="preserve">
+    <value>Print Email</value>
+  </data>
+  <data name="ShowMailTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;FromLbl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;BtnDecrypt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FromLbl.Name" xml:space="preserve">
+    <value>FromLbl</value>
+  </data>
+  <data name="FromLblText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="FromLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ShowMailTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Print_button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>661, 80</value>
+  </data>
+  <data name="&gt;&gt;Print_button.Name" xml:space="preserve">
+    <value>Print_button</value>
+  </data>
+  <data name="&gt;&gt;BtnDecrypt.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="SubjectLblText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LblAESKey.Name" xml:space="preserve">
+    <value>LblAESKey</value>
+  </data>
+  <data name="ShowMailTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 19</value>
+  </data>
+  <data name="&gt;&gt;FromLblText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SubjectLbl.Name" xml:space="preserve">
+    <value>SubjectLbl</value>
+  </data>
+  <data name="&gt;&gt;ToLblText.Name" xml:space="preserve">
+    <value>ToLblText</value>
+  </data>
+  <data name="ToLblText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="ShowMailTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 474</value>
+  </data>
+  <data name="ToLbl.Text" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="&gt;&gt;textBoxAESKey.Name" xml:space="preserve">
+    <value>textBoxAESKey</value>
+  </data>
+  <data name="&gt;&gt;FromLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SubjectLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ToLblText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="textBoxAESKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 19</value>
+  </data>
+  <data name="&gt;&gt;ToLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnDecrypt.Text" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="ToLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 13</value>
+  </data>
+  <data name="&gt;&gt;ToLbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Print_button.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FromLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LblAESKey.Text" xml:space="preserve">
+    <value>AES KEY</value>
+  </data>
+  <data name="SubjectLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 80</value>
+  </data>
+  <data name="SubjectLbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SubjectLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="&gt;&gt;FromLblText.Name" xml:space="preserve">
+    <value>FromLblText</value>
+  </data>
+  <data name="&gt;&gt;textBoxAESKey.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="textBoxAESKey.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="LblAESKey.Location" type="System.Drawing.Point, System.Drawing">
+    <value>473, 22</value>
+  </data>
+  <data name="&gt;&gt;SubjectLblText.Name" xml:space="preserve">
+    <value>SubjectLblText</value>
+  </data>
+  <data name="ShowMailTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 115</value>
+  </data>
+  <data name="SubjectLbl.Text" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="&gt;&gt;FromLblText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SubjectLblText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ToLblText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ShowMail</value>
+  </data>
+  <data name="Print_button.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ShowMailTextBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="LblAESKey.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;LblAESKey.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BtnDecrypt.Name" xml:space="preserve">
+    <value>BtnDecrypt</value>
+  </data>
+  <data name="FromLbl.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="LblAESKey.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="BtnDecrypt.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ToLblText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ToLbl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Print_button.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FromLbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="&gt;&gt;textBoxAESKey.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SubjectLblText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ToLblText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FromLbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 48</value>
+  </data>
+  <data name="&gt;&gt;ShowMailTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToLbl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ToLbl.Name" xml:space="preserve">
+    <value>ToLbl</value>
+  </data>
+  <data name="&gt;&gt;FromLbl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="BtnDecrypt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;textBoxAESKey.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <metadata name="ToLbl.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

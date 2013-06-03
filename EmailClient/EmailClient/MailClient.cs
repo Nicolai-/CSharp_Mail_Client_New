@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using Message = OpenPop.Mime.Message;
 using OpenPop;
 using System.Diagnostics;
+using System.Globalization;
 
 
 namespace EmailClient
@@ -221,7 +222,16 @@ namespace EmailClient
                 this.LblEmailInvalid.Text = string.Empty;
             }
         }
- 
+
+        private void danishToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            RuntimeLocalizer.ChangeCulture(this, "da-DK");
+        }
+
+        private void danishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RuntimeLocalizer.ChangeCulture(this, "en-US");
+        }
 
     }
 }

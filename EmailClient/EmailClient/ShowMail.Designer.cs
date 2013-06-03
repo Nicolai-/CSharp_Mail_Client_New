@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowMail));
             this.ToLbl = new System.Windows.Forms.Label();
             this.FromLbl = new System.Windows.Forms.Label();
             this.SubjectLbl = new System.Windows.Forms.Label();
@@ -43,106 +44,69 @@
             // 
             // ToLbl
             // 
-            this.ToLbl.AutoSize = true;
-            this.ToLbl.Location = new System.Drawing.Point(23, 19);
+            resources.ApplyResources(this.ToLbl, "ToLbl");
             this.ToLbl.Name = "ToLbl";
-            this.ToLbl.Size = new System.Drawing.Size(23, 13);
-            this.ToLbl.TabIndex = 1;
-            this.ToLbl.Text = "To:";
             // 
             // FromLbl
             // 
-            this.FromLbl.AutoSize = true;
-            this.FromLbl.Location = new System.Drawing.Point(23, 48);
+            resources.ApplyResources(this.FromLbl, "FromLbl");
             this.FromLbl.Name = "FromLbl";
-            this.FromLbl.Size = new System.Drawing.Size(33, 13);
-            this.FromLbl.TabIndex = 2;
-            this.FromLbl.Text = "From:";
             // 
             // SubjectLbl
             // 
-            this.SubjectLbl.AutoSize = true;
-            this.SubjectLbl.Location = new System.Drawing.Point(23, 80);
+            resources.ApplyResources(this.SubjectLbl, "SubjectLbl");
             this.SubjectLbl.Name = "SubjectLbl";
-            this.SubjectLbl.Size = new System.Drawing.Size(46, 13);
-            this.SubjectLbl.TabIndex = 4;
-            this.SubjectLbl.Text = "Subject:";
             // 
             // ToLblText
             // 
-            this.ToLblText.AutoSize = true;
-            this.ToLblText.Location = new System.Drawing.Point(83, 19);
+            resources.ApplyResources(this.ToLblText, "ToLblText");
             this.ToLblText.Name = "ToLblText";
-            this.ToLblText.Size = new System.Drawing.Size(0, 13);
-            this.ToLblText.TabIndex = 5;
             // 
             // FromLblText
             // 
-            this.FromLblText.AutoSize = true;
-            this.FromLblText.Location = new System.Drawing.Point(83, 48);
+            resources.ApplyResources(this.FromLblText, "FromLblText");
             this.FromLblText.Name = "FromLblText";
-            this.FromLblText.Size = new System.Drawing.Size(0, 13);
-            this.FromLblText.TabIndex = 6;
             // 
             // SubjectLblText
             // 
-            this.SubjectLblText.AutoSize = true;
-            this.SubjectLblText.Location = new System.Drawing.Point(83, 80);
+            resources.ApplyResources(this.SubjectLblText, "SubjectLblText");
             this.SubjectLblText.Name = "SubjectLblText";
-            this.SubjectLblText.Size = new System.Drawing.Size(0, 13);
-            this.SubjectLblText.TabIndex = 7;
             // 
             // ShowMailTextBox
             // 
+            resources.ApplyResources(this.ShowMailTextBox, "ShowMailTextBox");
             this.ShowMailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ShowMailTextBox.Location = new System.Drawing.Point(26, 115);
             this.ShowMailTextBox.Name = "ShowMailTextBox";
             this.ShowMailTextBox.ReadOnly = true;
-            this.ShowMailTextBox.Size = new System.Drawing.Size(710, 474);
-            this.ShowMailTextBox.TabIndex = 8;
-            this.ShowMailTextBox.Text = "";
             // 
             // Print_button
             // 
-            this.Print_button.Location = new System.Drawing.Point(661, 80);
+            resources.ApplyResources(this.Print_button, "Print_button");
             this.Print_button.Name = "Print_button";
-            this.Print_button.Size = new System.Drawing.Size(75, 23);
-            this.Print_button.TabIndex = 9;
-            this.Print_button.Text = "Print Email";
             this.Print_button.UseVisualStyleBackColor = true;
             this.Print_button.Click += new System.EventHandler(this.Print_button_Click);
             // 
             // textBoxAESKey
             // 
-            this.textBoxAESKey.Location = new System.Drawing.Point(531, 19);
+            resources.ApplyResources(this.textBoxAESKey, "textBoxAESKey");
             this.textBoxAESKey.Name = "textBoxAESKey";
-            this.textBoxAESKey.Size = new System.Drawing.Size(205, 20);
-            this.textBoxAESKey.TabIndex = 10;
             // 
             // LblAESKey
             // 
-            this.LblAESKey.AutoSize = true;
-            this.LblAESKey.Location = new System.Drawing.Point(473, 22);
+            resources.ApplyResources(this.LblAESKey, "LblAESKey");
             this.LblAESKey.Name = "LblAESKey";
-            this.LblAESKey.Size = new System.Drawing.Size(52, 13);
-            this.LblAESKey.TabIndex = 11;
-            this.LblAESKey.Text = "AES KEY";
             // 
             // BtnDecrypt
             // 
-            this.BtnDecrypt.Location = new System.Drawing.Point(661, 48);
+            resources.ApplyResources(this.BtnDecrypt, "BtnDecrypt");
             this.BtnDecrypt.Name = "BtnDecrypt";
-            this.BtnDecrypt.Size = new System.Drawing.Size(75, 23);
-            this.BtnDecrypt.TabIndex = 12;
-            this.BtnDecrypt.Text = "Decrypt";
             this.BtnDecrypt.UseVisualStyleBackColor = true;
             this.BtnDecrypt.Click += new System.EventHandler(this.BtnDecrypt_Click);
             // 
             // ShowMail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(760, 614);
             this.Controls.Add(this.BtnDecrypt);
             this.Controls.Add(this.LblAESKey);
             this.Controls.Add(this.textBoxAESKey);
@@ -155,7 +119,6 @@
             this.Controls.Add(this.FromLbl);
             this.Controls.Add(this.ToLbl);
             this.Name = "ShowMail";
-            this.Text = "ShowMail";
             this.ResumeLayout(false);
             this.PerformLayout();
 
