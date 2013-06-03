@@ -119,23 +119,22 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="danishToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
-  </data>
-  <data name="danishToolStripMenuItem1.Text" xml:space="preserve">
-    <value>Danish</value>
+    <value>152, 22</value>
   </data>
   <data name="StatusStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>1009, 22</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Subject_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;Subject_textbox.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
+  <data name="&gt;&gt;To_textbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Language</value>
   </data>
-  <data name="Send_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>719, 45</value>
+  <data name="&gt;&gt;danishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Message_Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 108</value>
@@ -143,6 +142,7 @@
   <data name="StripProgressBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 16</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Message_textbox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
@@ -161,26 +161,26 @@
   <data name="Send_Button.Text" xml:space="preserve">
     <value>Send</value>
   </data>
-  <data name="&gt;&gt;Subject_textbox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>69, 24</value>
   </data>
   <data name="&gt;&gt;Mail_Groupbox.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Mail_Groupbox.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="emailConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Email Configuration</value>
   </data>
-  <data name="&gt;&gt;Message_textbox.Name" xml:space="preserve">
-    <value>Message_textbox</value>
+  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Subject_textbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>408, 20</value>
   </data>
   <data name="&gt;&gt;To_Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Message_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="Mail_Groupbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 107</value>
@@ -194,14 +194,11 @@
   <data name="newMail_btn.Text" xml:space="preserve">
     <value>New</value>
   </data>
-  <data name="&gt;&gt;To_textbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Super Mail Klient by Mathias &amp; Nicolai - Mercantec</value>
   </data>
   <data name="To_Label.Text" xml:space="preserve">
     <value>TO :</value>
-  </data>
-  <data name="&gt;&gt;newMail_btn.ZOrder" xml:space="preserve">
-    <value>6</value>
   </data>
   <data name="&gt;&gt;StatusStrip.Name" xml:space="preserve">
     <value>StatusStrip</value>
@@ -230,17 +227,20 @@
   <data name="checkBoxEncrypt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 9.75pt</value>
   </data>
-  <data name="&gt;&gt;emailConfigurationToolStripMenuItem.Name" xml:space="preserve">
-    <value>emailConfigurationToolStripMenuItem</value>
+  <data name="&gt;&gt;inboxDataGridView.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+  <data name="&gt;&gt;Message_textbox.Name" xml:space="preserve">
+    <value>Message_textbox</value>
   </data>
   <data name="&gt;&gt;Subject_Label.Parent" xml:space="preserve">
     <value>Mail_Groupbox</value>
   </data>
   <data name="&gt;&gt;StatusStrip.Type" xml:space="preserve">
     <value>System.Windows.Forms.StatusStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Send_Button.Location" type="System.Drawing.Point, System.Drawing">
+    <value>719, 45</value>
   </data>
   <data name="inboxDataGridView.Size" type="System.Drawing.Size, System.Drawing">
     <value>942, 489</value>
@@ -253,6 +253,9 @@
   </data>
   <data name="sendReceive_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 58</value>
+  </data>
+  <data name="&gt;&gt;Send_Button.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 20</value>
@@ -267,11 +270,8 @@
   <data name="Subject_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;danishToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="danishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>158, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="&gt;&gt;Message_Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -282,11 +282,8 @@
   <data name="Message_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;danishToolStripMenuItem1.Name" xml:space="preserve">
-    <value>danishToolStripMenuItem1</value>
-  </data>
-  <data name="checkBoxEncrypt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;newMail_btn.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;inboxDataGridView.Parent" xml:space="preserve">
     <value>$this</value>
@@ -297,14 +294,20 @@
   <data name="&gt;&gt;Mail_Groupbox.Name" xml:space="preserve">
     <value>Mail_Groupbox</value>
   </data>
+  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 17</value>
+  </data>
   <data name="&gt;&gt;newMail_btn.Name" xml:space="preserve">
     <value>newMail_btn</value>
   </data>
-  <data name="Message_textbox.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="Mail_Groupbox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="inbox_btn.Text" xml:space="preserve">
     <value>Inbox</value>
+  </data>
+  <data name="Message_textbox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;newMail_btn.Parent" xml:space="preserve">
     <value>$this</value>
@@ -318,8 +321,8 @@
   <data name="&gt;&gt;To_Label.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="toolStripProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 17</value>
+  <data name="newMail_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="StripStatusLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>0, 17</value>
@@ -333,14 +336,8 @@
   <data name="sendReceive_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;toolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;sendReceive_btn.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="Send_Button.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
   </data>
   <data name="inbox_btn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -366,9 +363,6 @@
   <data name="&gt;&gt;LblEmailInvalid.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="newMail_btn.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
   <data name="Message_Label.Text" xml:space="preserve">
     <value>MESSAGE :</value>
   </data>
@@ -380,6 +374,9 @@
   </data>
   <data name="sendReceive_btn.Location" type="System.Drawing.Point, System.Drawing">
     <value>305, 23</value>
+  </data>
+  <data name="checkBoxEncrypt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;Mail_Groupbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -414,14 +411,14 @@
   <data name="inbox_btn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;Subject_textbox.Parent" xml:space="preserve">
-    <value>Mail_Groupbox</value>
+  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;To_Label.Name" xml:space="preserve">
     <value>To_Label</value>
   </data>
   <data name="danishToolStripMenuItem.Text" xml:space="preserve">
-    <value>English(Default)</value>
+    <value>English</value>
   </data>
   <data name="&gt;&gt;Message_Label.Parent" xml:space="preserve">
     <value>Mail_Groupbox</value>
@@ -429,14 +426,14 @@
   <data name="inboxDataGridView.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 107</value>
   </data>
+  <data name="inboxDataGridView.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="&gt;&gt;sendReceive_btn.Name" xml:space="preserve">
     <value>sendReceive_btn</value>
   </data>
   <data name="menuStrip1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>None</value>
-  </data>
-  <data name="emailConfigurationToolStripMenuItem.Text" xml:space="preserve">
-    <value>Email Configuration</value>
   </data>
   <data name="&gt;&gt;Subject_Label.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -468,9 +465,6 @@
   <data name="&gt;&gt;StripStatusLabel.Name" xml:space="preserve">
     <value>StripStatusLabel</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Super Mail Klient by Mathias &amp; Nicolai - Mercantec</value>
-  </data>
   <data name="StatusStrip.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
@@ -483,11 +477,11 @@
   <data name="Message_textbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>835, 254</value>
   </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
   <data name="checkBoxEncrypt.CheckAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;To_textbox.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <data name="emailConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -504,6 +498,9 @@
   <data name="&gt;&gt;Subject_textbox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Message_textbox.Parent" xml:space="preserve">
+    <value>Mail_Groupbox</value>
+  </data>
   <data name="&gt;&gt;danishToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -513,14 +510,11 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="checkBoxEncrypt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
-  </data>
   <data name="Subject_Label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
-  <data name="&gt;&gt;checkBoxEncrypt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;Message_textbox.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
   <data name="checkBoxEncrypt.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -546,8 +540,17 @@
   <data name="&gt;&gt;toolStripProgressBar1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripStatusLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Message_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
   <data name="&gt;&gt;Message_Label.Name" xml:space="preserve">
     <value>Message_Label</value>
+  </data>
+  <data name="checkBoxEncrypt.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
   </data>
   <data name="Subject_textbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 71</value>
@@ -557,9 +560,6 @@
   </data>
   <data name="&gt;&gt;sendReceive_btn.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="newMail_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 23</value>
   </data>
   <data name="To_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -573,11 +573,11 @@
   <data name="menuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
-  <data name="&gt;&gt;inboxDataGridView.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="danishToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Danish</value>
   </data>
-  <data name="Message_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;danishToolStripMenuItem1.Name" xml:space="preserve">
+    <value>danishToolStripMenuItem1</value>
   </data>
   <data name="To_textbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>138, 45</value>
@@ -585,14 +585,14 @@
   <data name="To_textbox.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;Message_textbox.ZOrder" xml:space="preserve">
-    <value>7</value>
+  <data name="&gt;&gt;Subject_textbox.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;StatusStrip.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Send_Button.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="Send_Button.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="To_Label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt</value>
@@ -621,8 +621,8 @@
   <data name="Subject_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 20</value>
   </data>
-  <data name="&gt;&gt;Message_textbox.Parent" xml:space="preserve">
-    <value>Mail_Groupbox</value>
+  <data name="&gt;&gt;emailConfigurationToolStripMenuItem.Name" xml:space="preserve">
+    <value>emailConfigurationToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;Subject_Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -630,7 +630,7 @@
   <data name="&gt;&gt;LblEmailInvalid.Name" xml:space="preserve">
     <value>LblEmailInvalid</value>
   </data>
-  <data name="Message_Label.AutoSize" type="System.Boolean, mscorlib">
+  <data name="Subject_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
@@ -639,14 +639,14 @@
   <data name="Mail_Groupbox.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="inboxDataGridView.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;checkBoxEncrypt.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="Message_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 20</value>
   </data>
-  <data name="&gt;&gt;To_textbox.ZOrder" xml:space="preserve">
-    <value>8</value>
+  <data name="newMail_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 23</value>
   </data>
   <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -665,8 +665,5 @@
   </metadata>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>127, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>en</value>
   </metadata>
 </root>

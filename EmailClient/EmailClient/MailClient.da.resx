@@ -166,6 +166,12 @@
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>Sprog</value>
   </data>
+  <data name="danishToolStripMenuItem.Text" xml:space="preserve">
+    <value>Engelsk</value>
+  </data>
+  <data name="danishToolStripMenuItem1.Text" xml:space="preserve">
+    <value>Dansk</value>
+  </data>
   <data name="emailConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 22</value>
   </data>
