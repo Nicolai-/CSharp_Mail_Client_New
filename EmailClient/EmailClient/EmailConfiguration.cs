@@ -14,17 +14,23 @@ namespace EmailClient
 {
     public partial class EmailConfiguration : Form
     {
+        /* Events to execute when the EmailConfiguration is loaded  */
         public EmailConfiguration()
         {
+            /* Use the EmailConfigurationLoadInfo function every time this form loads */
             this.Load += EmailConfigurationLoadInfo;
 
             InitializeComponent();
 
         }
 
+        /* Function that loads the current info in Setting.Settings  */
         void EmailConfigurationLoadInfo(object sender, EventArgs e)
         {
+            /* Sets the name of the window */
             this.Text = "Super Mail Klient by Mathias & Nicolai";
+
+            /* Sets the textboxses equal to the informaion in Settings.Settings */
             this.textBoxSmtpAddress.Text = Setting.Default.smtp_server;
             this.textBoxSmtpPort.Text = Convert.ToString(Setting.Default.smtp_port);
             this.textBoxSmtpUsername.Text = Setting.Default.username;
@@ -42,8 +48,10 @@ namespace EmailClient
 
         }
 
+        /* Events to execute when the "Apply" button under SMTP tab is clicked  */
         private void BtnSmtpApply_Click(object sender, EventArgs e)
         {
+            /* Sets the settings typed equal to those in Settings.Settings */
             Setting.Default.smtp_server = this.textBoxSmtpAddress.Text;
             Setting.Default.smtp_port = Convert.ToInt32(this.textBoxSmtpPort.Text);
             Setting.Default.username = this.textBoxSmtpUsername.Text;
@@ -53,8 +61,10 @@ namespace EmailClient
             Setting.Default.Save();
         }
 
+        /* Events to execute when the "Apply" button under POP3 tab is clicked  */
         private void BtnPop3Apply_Click(object sender, EventArgs e)
         {
+            /* Sets the settings typed equal to those in Settings.Settings */
             Setting.Default.pop3_server = this.textBoxPop3Address.Text;
             Setting.Default.pop3_port = Convert.ToInt32(this.textBoxPop3Port.Text);
             Setting.Default.username = this.textBoxPop3Username.Text;
@@ -64,8 +74,10 @@ namespace EmailClient
             Setting.Default.Save();
         }
 
+        /* Events to execute when the "Apply" button under General tab is clicked  */
         private void BtnGeneralApply_Click(object sender, EventArgs e)
         {
+            /* Sets the settings typed equal to those in Settings.Settings */
             Setting.Default.aes_key = this.textBoxAESKey.Text;
             Setting.Default.sender_name = this.textBoxSenderName.Text;
         }

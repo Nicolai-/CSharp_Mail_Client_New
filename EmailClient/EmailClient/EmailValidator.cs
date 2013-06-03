@@ -7,6 +7,7 @@ namespace EmailClient
 
         static Regex ValidEmailRegex = CreateValidEmailRegex();
 
+        /* Function to vaildate a Email */
         private static Regex CreateValidEmailRegex()
         {
             string validEmailPattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
@@ -16,6 +17,7 @@ namespace EmailClient
             return new Regex(validEmailPattern, RegexOptions.IgnoreCase);
         }
 
+        /* Function to check if the email matches the patterns set in CreateVaildEmailRegex */                                                                                      
         internal static bool EmailIsValid(string emailAddress)
         {
             bool isValid = ValidEmailRegex.IsMatch(emailAddress);

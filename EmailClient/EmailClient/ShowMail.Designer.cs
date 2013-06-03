@@ -156,7 +156,6 @@
             this.Controls.Add(this.ToLbl);
             this.Name = "ShowMail";
             this.Text = "ShowMail";
-            this.Load += new System.EventHandler(this.ShowMail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
